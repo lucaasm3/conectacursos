@@ -1,0 +1,7 @@
+Coloque as imagens dos cursos nesta pasta.
+No arquivo script.js, localize o curso pelo nome e preencha o campo imagem.
+Exemplo: "imagem": "images/autismo.jpg"
+Cada curso tem seu próprio campo imagem. A mesma imagem aparece no cartão e nos detalhes.
+Use os nomes e extensões reais, respeitando maiúsculas e minúsculas.
+Enquanto o campo estiver vazio ou o arquivo não for encontrado, aparece “Insira imagem”.
+Prefira imagens WebP ou JPEG otimizadas. A área de imagem usa recorte central.
