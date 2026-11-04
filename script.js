@@ -55,7 +55,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10647",
-    "imagem": "",
+    "imagem": "images/autismosaladeaula.jpg",
     "nivel": "básico"
   },
   {
@@ -111,7 +111,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10448",
-    "imagem": "",
+    "imagem": "images/cultutadigital.jpg",
     "nivel": "básico"
   },
   {
@@ -167,7 +167,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10562",
-    "imagem": "",
+    "imagem": "images/personalizacaodoensino.jpg",
     "nivel": "básico"
   },
   {
@@ -223,7 +223,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10568",
-    "imagem": "",
+    "imagem": "images/possibilidadetecassistiva.jpg",
     "nivel": "básico"
   },
   {
@@ -279,7 +279,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10576",
-    "imagem": "",
+    "imagem": "images/psicologiaaprendizagem.jpg",
     "nivel": "básico"
   },
   {
@@ -335,7 +335,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10403",
-    "imagem": "",
+    "imagem": "images/altashabilidades.jpg",
     "nivel": "básico"
   },
   {
@@ -391,7 +391,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10445",
-    "imagem": "",
+    "imagem": "images/cuidadoridoso.jpg",
     "nivel": "básico"
   },
   {
@@ -447,7 +447,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10625",
-    "imagem": "",
+    "imagem": "images/primeirossocorros.jpg",
     "nivel": "básico"
   },
   {
@@ -503,7 +503,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10465",
-    "imagem": "",
+    "imagem": "images/epidemiologia.jpg",
     "nivel": "básico"
   },
   {
@@ -559,7 +559,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10585",
-    "imagem": "",
+    "imagem": "images/saudeocupacional.jpg",
     "nivel": "básico"
   },
   {
@@ -615,7 +615,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10421",
-    "imagem": "",
+    "imagem": "images/automacaosistemas.jpg",
     "nivel": "médio"
   },
   {
@@ -671,7 +671,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10450",
-    "imagem": "",
+    "imagem": "images/php.jpg",
     "nivel": "médio"
   },
   {
@@ -727,7 +727,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10560",
-    "imagem": "",
+    "imagem": "images/nodejs.jpg",
     "nivel": "básico"
   },
   {
@@ -783,7 +783,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10627",
-    "imagem": "",
+    "imagem": "images/progamadorweb.jpg",
     "nivel": "básico"
   },
   {
@@ -839,7 +839,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10630",
-    "imagem": "",
+    "imagem": "images/scrum.jpg",
     "nivel": "básico"
   },
   {
@@ -895,7 +895,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10391",
-    "imagem": "",
+    "imagem": "images/admbancodedados.jpg",
     "nivel": "médio"
   },
   {
