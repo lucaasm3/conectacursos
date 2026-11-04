@@ -1703,7 +1703,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/conceitos-de-aprendizagem-criativa",
-    "imagem": "",
+    "imagem": "imagens/fundacao_png",
     "nivel": "Não informado"
   },
   {
@@ -1731,7 +1731,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/design-thinking-para-educadores",
-    "imagem": "",
+    "imagem": "images/fundacaoo.jpg",
     "nivel": "Não informado"
   },
   {
@@ -1759,7 +1759,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/educacao-inclusiva",
-    "imagem": "",
+    "imagem": "images/fundacaoo.jpg",
     "nivel": "Não informado"
   },
   {
@@ -1787,7 +1787,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/educacao-financeira",
-    "imagem": "",
+    "imagem": "images/fundacaoo.jpg",
     "nivel": "Não informado"
   },
   {
@@ -1899,7 +1899,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/fundamentos-de-ti-hardware-e-software",
-    "imagem": "",
+    "imagem": "images/fundacaoo.jpg",
     "nivel": "Iniciante"
   },
   {
@@ -1955,7 +1955,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/crie-um-site-simples-usando-html-css-e-javascript",
-    "imagem": "",
+    "imagem": "images/fundacaoo.jpg",
     "nivel": "Iniciante"
   },
   {
@@ -2011,7 +2011,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/linguagem-de-programacao-python-basico",
-    "imagem": "",
+    "imagem": "images/fundacaoo.jpg",
     "nivel": "Iniciante"
   },
   {
@@ -2067,7 +2067,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/introducao-ao-scratch-linguagem-de-programacao-na-computacao-criativa",
-    "imagem": "",
+    "imagem": "images/fundacaoo.jpg",
     "nivel": "Iniciante"
   },
   {
@@ -2119,7 +2119,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/scratch-suas-extensoes-e-computacao-fisica",
-    "imagem": "",
+    "imagem": "images/fundacaoo.jpg",
     "nivel": "Iniciante"
   },
   {
@@ -2167,7 +2167,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.unasus.gov.br/cursos/curso/46813",
-    "imagem": "",
+    "imagem": "images/aperfeiçoamentoemsaúdemental.jpg",
     "nivel": "Extensão"
   },
   {
@@ -2223,7 +2223,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.unasus.gov.br/cursos/curso/47122",
-    "imagem": "",
+    "imagem": "images/culturadigital.jpg",
     "nivel": "Extensão"
   },
   {
@@ -2279,7 +2279,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.unasus.gov.br/cursos/curso/47096",
-    "imagem": "",
+    "imagem": "images/direitoshumanos.jpg",
     "nivel": "Outros"
   },
   {
@@ -2331,7 +2331,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.unasus.gov.br/cursos/curso/47045",
-    "imagem": "",
+    "imagem": "images/desnutriçao.jpg",
     "nivel": "Educação Profissional e Tecnológica"
   },
   {
@@ -2383,7 +2383,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.unasus.gov.br/cursos/curso/46640",
-    "imagem": "",
+    "imagem": "images/recursos_humanos.jpg",
     "nivel": "Outros"
   }
 ];
