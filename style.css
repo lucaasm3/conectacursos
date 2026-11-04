@@ -939,7 +939,7 @@ dialog::backdrop {
 .iniciativa {
     border-top: 1px solid var(--borda);
     padding: 38px 0 48px;
-    align-items: start;
+    align-items: center;
     background: var(--verde-claro);
     box-shadow: 0 0 0 100vmax var(--verde-claro);
     clip-path: inset(0 -100vmax);
