@@ -5,7 +5,7 @@ Catálogo de cursos complementares desenvolvido com HTML, CSS e JavaScript, a pa
 ## Execução
 
 Extraia o ZIP e abra `index.html`. Não há dependências ou etapa de instalação. Também é possível abrir a pasta no VS Code e usar um servidor local. Para publicar, envie o conteúdo da pasta `conectacursos` a uma hospedagem estática.
-
+oiiiiiiii
 ## Arquivos
 
 - `index.html`: página principal e detalhes dos cursos.
