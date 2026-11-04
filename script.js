@@ -15,7 +15,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -27,11 +27,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "professores da educação básica, equipes pedagógicas, profissionais do AEE, gestores escolares e estudantes de licenciatura"
+        "Professores da educação básica, equipes pedagógicas, profissionais do AEE, gestores escolares e estudantes de licenciatura"
       ],
       [
         "Requisitos",
-        "ter ensino fundamental completo"
+        "Ter ensino fundamental completo"
       ],
       [
         "Módulos",
@@ -39,7 +39,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -47,15 +47,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10647",
-    "imagem": "",
+    "imagem": "images/autismosaladeaula.jpg",
     "nivel": "básico"
   },
   {
@@ -71,7 +71,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -83,11 +83,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "docentes de escolas de educação básica es estudantes de licenciatura"
+        "Docentes de escolas de educação básica es estudantes de licenciatura"
       ],
       [
         "Requisitos",
-        "compreensão de leitura em lingua portuguesa, possuir computador com recursos de áudio e vídeo."
+        "Compreensão de leitura em língua portuguesa, possuir computador com recursos de áudio e vídeo."
       ],
       [
         "Módulos",
@@ -95,7 +95,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -103,15 +103,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10448",
-    "imagem": "",
+    "imagem": "images/cultutadigital.jpg",
     "nivel": "básico"
   },
   {
@@ -127,7 +127,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -139,11 +139,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "professores em geral, estudantes de licenciatura e técnicos administrativos"
+        "Professores em geral, estudantes de licenciatura e técnicos administrativos"
       ],
       [
         "Requisitos",
-        "possuir e saber manusear o leitor de arquivos PDF, possuir computador com recursos de áudio e vídeo, compreensão de leitura e escuta em língua portuguesa, alguns conteúdos poderão estar em inglês, conhecimentos básicos sobre Educação poderão contribuir para aquisição de conhecimentos no curso."
+        "Possuir e saber manusear o leitor de arquivos PDF, possuir computador com recursos de áudio e vídeo, compreensão de leitura e escuta em língua portuguesa, alguns conteúdos poderão estar em inglês, conhecimentos básicos sobre Educação poderão contribuir para aquisição de conhecimentos no curso."
       ],
       [
         "Módulos",
@@ -151,7 +151,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -159,15 +159,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português e inglês"
+        "Português e Inglês"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10562",
-    "imagem": "",
+    "imagem": "images/personalizacaodoensino.jpg",
     "nivel": "básico"
   },
   {
@@ -183,7 +183,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -195,11 +195,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "profissionais da educação inclusiva e pessoas com deficiência"
+        "Profissionais da educação inclusiva e pessoas com deficiência"
       ],
       [
         "Requisitos",
-        "compreensão de leitura e escuta em lingua portuguesa, possuir computador com recursos de áudio e vídeo."
+        "Compreensão de leitura e escuta em língua portuguesa, possuir computador com recursos de áudio e vídeo."
       ],
       [
         "Módulos",
@@ -207,7 +207,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -215,15 +215,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10568",
-    "imagem": "",
+    "imagem": "images/possibilidadetecassistiva.jpg",
     "nivel": "básico"
   },
   {
@@ -239,7 +239,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -251,11 +251,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes de licenciatura, profissionais da área da educação"
+        "Estudantes de licenciatura, profissionais da área da educação"
       ],
       [
         "Requisitos",
-        "compreensão de leitura em língua portuguesa, possuir e saber manusear o leitor de arquivos PDF"
+        "Compreensão de leitura em língua portuguesa, possuir e saber manusear o leitor de arquivos PDF"
       ],
       [
         "Módulos",
@@ -263,7 +263,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -271,15 +271,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10576",
-    "imagem": "",
+    "imagem": "images/psicologiaaprendizagem.jpg",
     "nivel": "básico"
   },
   {
@@ -295,7 +295,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -307,11 +307,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes e profissionais da área da saúde e educação"
+        "Estudantes e profissionais da área da saúde e educação"
       ],
       [
         "Requisitos",
-        "compreensão de leitura em língua portuguesa, possuir e saber manusear o leitor de arquivos PDF, possuir equipamento com recursos de audio e vídeo"
+        "Compreensão de leitura em língua portuguesa, possuir e saber manusear o leitor de arquivos PDF, possuir equipamento com recursos de audio e vídeo"
       ],
       [
         "Módulos",
@@ -319,7 +319,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -327,15 +327,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10403",
-    "imagem": "",
+    "imagem": "images/altashabilidades.jpg",
     "nivel": "básico"
   },
   {
@@ -351,7 +351,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -363,11 +363,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes do ensino fundamental da educação de jovens e adultos"
+        "Estudantes do ensino fundamental da educação de jovens e adultos"
       ],
       [
         "Requisitos",
-        "compreensão de leitura em língua portuguesa, possuir e saber manusear o leitor de arquivos PDF, possuir computador com recursos de áudio e vídeo."
+        "Compreensão de leitura em língua portuguesa, possuir e saber manusear o leitor de arquivos PDF, possuir computador com recursos de áudio e vídeo."
       ],
       [
         "Módulos",
@@ -375,7 +375,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -383,15 +383,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10445",
-    "imagem": "",
+    "imagem": "images/cuidadoridoso.jpg",
     "nivel": "básico"
   },
   {
@@ -407,7 +407,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -419,11 +419,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "profissionais de saúde"
+        "Profissionais de saúde"
       ],
       [
         "Requisitos",
-        "ser estudante ou profissional na área da saúde, compreensão de leitura em língua portuguesa, possuir e saber manusear o leitor de arquivos PDF"
+        "Ser estudante ou profissional na área da saúde, compreensão de leitura em língua portuguesa, possuir e saber manusear o leitor de arquivos PDF"
       ],
       [
         "Módulos",
@@ -431,7 +431,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -439,15 +439,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10625",
-    "imagem": "",
+    "imagem": "images/primeirossocorros.jpg",
     "nivel": "básico"
   },
   {
@@ -463,7 +463,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -475,11 +475,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes ou profissionais na área da saúde"
+        "Estudantes ou profissionais na área da saúde"
       ],
       [
         "Requisitos",
-        "compreensão de leitura em língua portuguesa, possuir e saber manusear o leitor de arquivos PDF"
+        "Compreensão de leitura em língua portuguesa, possuir e saber manusear o leitor de arquivos PDF"
       ],
       [
         "Módulos",
@@ -487,7 +487,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -495,15 +495,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10465",
-    "imagem": "",
+    "imagem": "images/epidemiologia.jpg",
     "nivel": "básico"
   },
   {
@@ -519,7 +519,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -531,11 +531,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "profissionais de saúde"
+        "Profissionais de saúde"
       ],
       [
         "Requisitos",
-        "ser estudante ou profissional na área da saúde, compreensão de leitura em língua portuguesa, possuir e saber manusear o leitor de arquivos PDF"
+        "Ser estudante ou profissional na área da saúde, compreensão de leitura em língua portuguesa, possuir e saber manusear o leitor de arquivos PDF"
       ],
       [
         "Módulos",
@@ -543,7 +543,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -551,15 +551,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10585",
-    "imagem": "",
+    "imagem": "images/saudeocupacional.jpg",
     "nivel": "básico"
   },
   {
@@ -575,7 +575,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -587,11 +587,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes de cursos técnicos relacionados a automação ou cursos superiores de engenharia."
+        "Estudantes de cursos técnicos relacionados a automação ou cursos superiores de engenharia."
       ],
       [
         "Requisitos",
-        "compreensão de leitura em língua portuguesa, possuir dispositivo com acesso à internet."
+        "Compreensão de leitura em língua portuguesa, possuir dispositivo com acesso à internet."
       ],
       [
         "Módulos",
@@ -599,7 +599,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -607,15 +607,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "médio"
+        "Médio"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10421",
-    "imagem": "",
+    "imagem": "images/automacaosistemas.jpg",
     "nivel": "médio"
   },
   {
@@ -631,7 +631,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -643,11 +643,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes e profissionais que atuam na área da tecnologia"
+        "Estudantes e profissionais que atuam na área da tecnologia"
       ],
       [
         "Requisitos",
-        "conhecimentos em HTML, compreensão de leitura em língua portuguesa, possuir e saber manusear softwares e servidor de hospedagem PHP"
+        "Conhecimentos em HTML, compreensão de leitura em língua portuguesa, possuir e saber manusear softwares e servidor de hospedagem PHP"
       ],
       [
         "Módulos",
@@ -655,7 +655,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -663,15 +663,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "médio"
+        "Médio"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10450",
-    "imagem": "",
+    "imagem": "images/php.jpg",
     "nivel": "médio"
   },
   {
@@ -687,7 +687,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -699,11 +699,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "desenvolvedores de software, tanto iniciantes quanto intermediários, que possuem conhecimentos básicos em JavaScript"
+        "Desenvolvedores de software, tanto iniciantes quanto intermediários, que possuem conhecimentos básicos em JavaScript"
       ],
       [
         "Requisitos",
-        "compreensão de leitura em língua portuguesa, conhecimento em informática e internet"
+        "Compreensão de leitura em língua portuguesa, conhecimento em informática e internet"
       ],
       [
         "Módulos",
@@ -711,7 +711,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -719,15 +719,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10560",
-    "imagem": "",
+    "imagem": "images/nodejs.jpg",
     "nivel": "básico"
   },
   {
@@ -743,7 +743,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -755,11 +755,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "programadores e iniciantes da área da programação voltada para WEB"
+        "Programadores e iniciantes da área da programação voltada para WEB"
       ],
       [
         "Requisitos",
-        "possuir computador ou notebook com possibilidade de instalação de softwares gratuitos e com recursos de áudio e vídeo, habilidade na utilização e instalação de softwares, possuir e saber manusear o leitor de arquivos PDF, conhecimento de matemática básica, compreensão de leitura e escuta em língua portuguesa."
+        "Possuir computador ou notebook com possibilidade de instalação de softwares gratuitos e com recursos de áudio e vídeo, habilidade na utilização e instalação de softwares, possuir e saber manusear o leitor de arquivos PDF, conhecimento de matemática básica, compreensão de leitura e escuta em língua portuguesa."
       ],
       [
         "Módulos",
@@ -767,7 +767,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -775,15 +775,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10627",
-    "imagem": "",
+    "imagem": "images/progamadorweb.jpg",
     "nivel": "básico"
   },
   {
@@ -799,7 +799,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -811,11 +811,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes e profissionais que atuam na área de desenvolvimento de software"
+        "Estudantes e profissionais que atuam na área de desenvolvimento de software"
       ],
       [
         "Requisitos",
-        "compreensão de leitura em língua portuguesa, conhecimento em informática e internet"
+        "Compreensão de leitura em língua portuguesa, conhecimento em informática e internet"
       ],
       [
         "Módulos",
@@ -823,7 +823,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -831,15 +831,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10630",
-    "imagem": "",
+    "imagem": "images/scrum.jpg",
     "nivel": "básico"
   },
   {
@@ -855,7 +855,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 31/01/2027"
+        "Até 31/01/2027"
       ],
       [
         "Carga horária",
@@ -867,11 +867,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes e profissionais de Tecnologia da Informação."
+        "Estudantes e profissionais de Tecnologia da Informação."
       ],
       [
         "Requisitos",
-        "conhecimento em lógica de programação, possuir computador ou notebook com recursos de áudio e vídeo, instalar do PostgreSQL e MySQL, possuir e saber manusear o leitor de arquivos PDF"
+        "Conhecimento em lógica de programação, possuir computador ou notebook com recursos de áudio e vídeo, instalar do PostgreSQL e MySQL, possuir e saber manusear o leitor de arquivos PDF"
       ],
       [
         "Módulos",
@@ -879,7 +879,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -887,15 +887,15 @@ const cursos = [
       ],
       [
         "Nível",
-        "médio"
+        "Médio"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10391",
-    "imagem": "",
+    "imagem": "images/admbancodedados.jpg",
     "nivel": "médio"
   },
   {
@@ -911,7 +911,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -919,11 +919,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "gestores e professores das redes pública e privada, estudantes do Ensino Médio e Superior e demais interessados."
+        "Gestores e professores das redes pública e privada, estudantes do Ensino Médio e Superior e demais interessados."
       ],
       [
         "Requisitos",
-        "ter 18 anos ou mais; não exige formação prévia; necessita de acesso à internet."
+        "Ter 18 anos ou mais; não exige formação prévia; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -939,11 +939,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/planejamento-e-estrategia-para-gestao-escolar",
@@ -963,7 +963,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -971,11 +971,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes do Ensino Superior e profissionais interessados em ampliar seus conhecimentos sobre língua de sinais e cultura surda."
+        "Estudantes do Ensino Superior e profissionais interessados em ampliar seus conhecimentos sobre língua de sinais e cultura surda."
       ],
       [
         "Requisitos",
-        "não possui pré-requisitos; necessita de acesso à internet."
+        "Não possui pré-requisitos; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -991,11 +991,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/introducao-a-cultura-e-identidade-do-surdo",
@@ -1015,7 +1015,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -1023,11 +1023,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes do Ensino Superior e profissionais interessados em metodologia da pesquisa."
+        "Estudantes do Ensino Superior e profissionais interessados em metodologia da pesquisa."
       ],
       [
         "Requisitos",
-        "não possui pré-requisitos; necessita de acesso à internet."
+        "Não possui pré-requisitos; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -1043,11 +1043,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/introducao-a-metodologia-da-pesquisa",
@@ -1067,7 +1067,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -1075,11 +1075,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "professores de diferentes níveis, profissionais da educação, estudantes de licenciatura e demais interessados."
+        "Professores de diferentes níveis, profissionais da educação, estudantes de licenciatura e demais interessados."
       ],
       [
         "Requisitos",
-        "não possui pré-requisitos; necessita de acesso à internet."
+        "Não possui pré-requisitos; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -1095,11 +1095,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/metodologias-ativas",
@@ -1119,7 +1119,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -1127,11 +1127,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "professores, profissionais da educação, estudantes de licenciatura e demais interessados no tema."
+        "Professores, profissionais da educação, estudantes de licenciatura e demais interessados no tema."
       ],
       [
         "Requisitos",
-        "não possui pré-requisitos; necessita de acesso à internet."
+        "Não possui pré-requisitos; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -1147,11 +1147,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "atualização."
+        "Atualização."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/direitos-autorais-na-producao-de-material-didatico",
@@ -1171,7 +1171,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -1179,11 +1179,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "gestores municipais de saúde e profissionais de nível superior que exerçam funções de liderança em organizações de saúde."
+        "Gestores municipais de saúde e profissionais de nível superior que exerçam funções de liderança em organizações de saúde."
       ],
       [
         "Requisitos",
-        "não possui pré-requisitos; necessita de acesso à internet."
+        "Não possui pré-requisitos; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -1199,11 +1199,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/design-thinking-aplicado-a-area-da-saude",
@@ -1223,7 +1223,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -1231,11 +1231,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "gestores municipais de saúde e profissionais de nível superior que exerçam funções de liderança em organizações de saúde."
+        "Gestores municipais de saúde e profissionais de nível superior que exerçam funções de liderança em organizações de saúde."
       ],
       [
         "Requisitos",
-        "não possui pré-requisitos; necessita de acesso à internet."
+        "Não possui pré-requisitos; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -1251,11 +1251,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/experiencia-do-paciente-a-importancia-na-saude-publica-e-privada-em-tempos-de-transformacao",
@@ -1275,7 +1275,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -1283,11 +1283,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "pessoas interessadas em ampliar seus conhecimentos sobre o cuidado de pacientes críticos."
+        "Pessoas interessadas em ampliar seus conhecimentos sobre o cuidado de pacientes críticos."
       ],
       [
         "Requisitos",
-        "não possui pré-requisitos formais; necessita de acesso à internet."
+        "Não possui pré-requisitos formais; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -1303,11 +1303,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/habilidades-chave-para-o-cuidado-de-pacientes-criticos",
@@ -1327,7 +1327,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -1335,11 +1335,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "pessoas interessadas em saúde mental e relações de trabalho."
+        "Pessoas interessadas em saúde mental e relações de trabalho."
       ],
       [
         "Requisitos",
-        "não possui pré-requisitos; necessita de acesso à internet."
+        "Não possui pré-requisitos; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -1355,11 +1355,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/saude-mental-no-ambiente-de-trabalho",
@@ -1379,7 +1379,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -1387,11 +1387,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "gestores municipais de saúde e profissionais de nível superior que exerçam funções de liderança em organizações de saúde."
+        "Gestores municipais de saúde e profissionais de nível superior que exerçam funções de liderança em organizações de saúde."
       ],
       [
         "Requisitos",
-        "não possui pré-requisitos; necessita de acesso à internet."
+        "Não possui pré-requisitos; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -1407,11 +1407,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/saude-populacional-e-determinantes-sociais-desafios-emergentes-pos-pandemia",
@@ -1431,7 +1431,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -1439,11 +1439,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes do Ensino Superior e profissionais interessados em desenvolvimento web."
+        "Estudantes do Ensino Superior e profissionais interessados em desenvolvimento web."
       ],
       [
         "Requisitos",
-        "não possui pré-requisitos; necessita de acesso à internet."
+        "Não possui pré-requisitos; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -1459,11 +1459,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/desenvolvimento-de-sistemas-web-css-e-html",
@@ -1483,7 +1483,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -1491,7 +1491,7 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "pessoas interessadas em versionamento de código e colaboração em projetos de software."
+        "Pessoas interessadas em versionamento de código e colaboração em projetos de software."
       ],
       [
         "Requisitos",
@@ -1511,11 +1511,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/introducao-ao-git-e-github",
@@ -1535,7 +1535,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -1543,11 +1543,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes do Ensino Superior e profissionais interessados em bancos de dados e análise de informações."
+        "Estudantes do Ensino Superior e profissionais interessados em bancos de dados e análise de informações."
       ],
       [
         "Requisitos",
-        "não possui pré-requisitos formais; necessita de acesso à internet."
+        "Não possui pré-requisitos formais; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -1563,11 +1563,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/sql-structured-query-language",
@@ -1587,7 +1587,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -1595,11 +1595,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes do Ensino Superior e profissionais interessados em cibersegurança."
+        "Estudantes do Ensino Superior e profissionais interessados em cibersegurança."
       ],
       [
         "Requisitos",
-        "não possui pré-requisitos; necessita de acesso à internet."
+        "Não possui pré-requisitos; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -1615,11 +1615,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/ciberseguranca-anatomia-classica-de-um-ciberataque",
@@ -1639,7 +1639,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
+        "Sem prazo fixo; pode ser realizado no próprio ritmo enquanto permanecer disponível. A declaração é liberada com nota mínima 7,0 no pós-teste."
       ],
       [
         "Carga horária",
@@ -1647,11 +1647,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "estudantes do Ensino Superior, profissionais de Tecnologia e Ciência de Dados e demais interessados."
+        "Estudantes do Ensino Superior, profissionais de Tecnologia e Ciência de Dados e demais interessados."
       ],
       [
         "Requisitos",
-        "não possui pré-requisitos formais; necessita de acesso à internet."
+        "Não possui pré-requisitos formais; necessita de acesso à internet."
       ],
       [
         "Módulos",
@@ -1667,11 +1667,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
-        "português."
+        "Português."
       ]
     ],
     "link": "https://cursosgratuitos.fgv.br/curso/introducao-a-ciencia-de-dados",
@@ -1803,7 +1803,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 60 dias"
+        "Até 60 dias"
       ],
       [
         "Carga horária",
@@ -1815,11 +1815,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "profissionais da educação e público geral"
+        "Profissionais da educação e público geral"
       ],
       [
         "Requisitos",
-        "compreensão de leitura e escuta em lingua portuguesa, possuir computador com recursos de áudio e vídeo."
+        "Compreensão de leitura e escuta em língua portuguesa, possuir computador com recursos de áudio e vídeo."
       ],
       [
         "Módulos",
@@ -1827,7 +1827,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -1835,11 +1835,11 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://www.ev.org.br/cursos/comunicacao-empresarial",
@@ -1859,7 +1859,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 60 dias"
+        "Até 60 dias"
       ],
       [
         "Carga horária",
@@ -1871,11 +1871,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "público geral"
+        "Público geral"
       ],
       [
         "Requisitos",
-        "compreensão de leitura e escuta em lingua portuguesa"
+        "Compreensão de leitura e escuta em língua portuguesa"
       ],
       [
         "Módulos",
@@ -1883,7 +1883,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -1895,7 +1895,7 @@ const cursos = [
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://www.ev.org.br/cursos/fundamentos-de-ti-hardware-e-software",
@@ -1915,7 +1915,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 60 dias"
+        "Até 60 dias"
       ],
       [
         "Carga horária",
@@ -1927,11 +1927,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "público geral"
+        "Público geral"
       ],
       [
         "Requisitos",
-        "compreensão de leitura e escuta em lingua portuguesa"
+        "Compreensão de leitura e escuta em língua portuguesa"
       ],
       [
         "Módulos",
@@ -1939,7 +1939,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -1951,7 +1951,7 @@ const cursos = [
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://www.ev.org.br/cursos/crie-um-site-simples-usando-html-css-e-javascript",
@@ -1971,7 +1971,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 60 dias"
+        "Até 60 dias"
       ],
       [
         "Carga horária",
@@ -1983,11 +1983,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "público geral"
+        "Público geral"
       ],
       [
         "Requisitos",
-        "compreensão de leitura e escuta em lingua portuguesa"
+        "Compreensão de leitura e escuta em língua portuguesa"
       ],
       [
         "Módulos",
@@ -1995,7 +1995,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -2007,7 +2007,7 @@ const cursos = [
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://www.ev.org.br/cursos/linguagem-de-programacao-python-basico",
@@ -2027,7 +2027,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 60 dias"
+        "Até 60 dias"
       ],
       [
         "Carga horária",
@@ -2039,11 +2039,11 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "público geral"
+        "Público geral"
       ],
       [
         "Requisitos",
-        "compreensão de leitura e escuta em lingua portuguesa"
+        "Compreensão de leitura e escuta em língua portuguesa"
       ],
       [
         "Módulos",
@@ -2051,7 +2051,7 @@ const cursos = [
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -2063,7 +2063,7 @@ const cursos = [
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://www.ev.org.br/cursos/introducao-ao-scratch-linguagem-de-programacao-na-computacao-criativa",
@@ -2083,7 +2083,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 60 dias"
+        "Até 60 dias"
       ],
       [
         "Carga horária",
@@ -2095,15 +2095,15 @@ const cursos = [
       ],
       [
         "Público-alvo",
-        "público geral"
+        "Público geral"
       ],
       [
         "Requisitos",
-        "compreensão de leitura e escuta em lingua portuguesa"
+        "Compreensão de leitura e escuta em língua portuguesa"
       ],
       [
         "Metodologia",
-        "sem tutoria"
+        "Sem tutoria"
       ],
       [
         "Instituição",
@@ -2115,7 +2115,7 @@ const cursos = [
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://www.ev.org.br/cursos/scratch-suas-extensoes-e-computacao-fisica",
@@ -2135,7 +2135,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 60 dias"
+        "Até 60 dias"
       ],
       [
         "Carga horária",
@@ -2151,7 +2151,7 @@ const cursos = [
       ],
       [
         "Requisitos",
-        "compreensão de leitura e escuta em lingua portuguesa"
+        "Compreensão de leitura e escuta em língua portuguesa"
       ],
       [
         "Instituição",
@@ -2163,7 +2163,7 @@ const cursos = [
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://www.unasus.gov.br/cursos/curso/46813",
@@ -2183,7 +2183,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 60 dias"
+        "Até 60 dias"
       ],
       [
         "Carga horária",
@@ -2203,7 +2203,7 @@ const cursos = [
       ],
       [
         "Requisitos",
-        "compreensão de leitura e escuta em lingua portuguesa"
+        "Compreensão de leitura e escuta em língua portuguesa"
       ],
       [
         "Metodologia",
@@ -2219,7 +2219,7 @@ const cursos = [
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://www.unasus.gov.br/cursos/curso/47122",
@@ -2239,7 +2239,7 @@ const cursos = [
     "especificacoes": [
       [
         "Conclusão do curso",
-        "até 60 dias"
+        "Até 60 dias"
       ],
       [
         "Carga horária",
@@ -2259,7 +2259,7 @@ const cursos = [
       ],
       [
         "Requisitos",
-        "compreensão de leitura e escuta em lingua portuguesa"
+        "Compreensão de leitura e escuta em língua portuguesa"
       ],
       [
         "Metodologia",
@@ -2275,7 +2275,7 @@ const cursos = [
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://www.unasus.gov.br/cursos/curso/47096",
@@ -2311,7 +2311,7 @@ const cursos = [
       ],
       [
         "Requisitos",
-        "compreensão de leitura e escuta em lingua portuguesa"
+        "Compreensão de leitura e escuta em língua portuguesa"
       ],
       [
         "Metodologia",
@@ -2327,7 +2327,7 @@ const cursos = [
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://www.unasus.gov.br/cursos/curso/47045",
@@ -2363,7 +2363,7 @@ const cursos = [
       ],
       [
         "Requisitos",
-        "compreensão de leitura e escuta em língua portuguesa"
+        "Compreensão de leitura e escuta em língua portuguesa"
       ],
       [
         "Metodologia",
@@ -2379,7 +2379,7 @@ const cursos = [
       ],
       [
         "Idioma",
-        "português"
+        "Português"
       ]
     ],
     "link": "https://www.unasus.gov.br/cursos/curso/46640",
