@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Login — ConectaCursos</title><link rel="stylesheet" href="style.css"><script src="conta.js" defer></script></head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — ConectaCursos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="conta.js" defer></script>
+</head>
+
 <body>
-<a class="pular" href="#conteudo">Pular para o conteúdo</a>
-<div class="faixa-cabecalho"><header class="cabecalho cabecalho-conta"><a class="logo" href="index.html"><span class="marca" aria-hidden="true">c.</span>Conecta<span>Cursos</span></a><div class="controles-cabecalho"><a class="atalho" href="index.html#cursos">Explorar cursos</a><button class="tema-botao" type="button" aria-label="Ativar modo escuro" aria-pressed="false">◐ Tema escuro</button></div></header></div>
-<main class="largura pagina-conta" id="conteudo"><section class="apresentacao-conta"><p class="sobretitulo">SEU PRÓXIMO PASSO COMEÇA AQUI</p><h1>Bom ter você por aqui.</h1><p>Descubra novos interesses, encontre cursos e continue construindo sua formação.</p><a class="link" href="index.html">← Voltar ao catálogo</a></section>
-<section class="painel-conta" aria-labelledby="titulo-formulario"><p class="sobretitulo">CONECTACURSOS</p><h2 id="titulo-formulario">Entre na plataforma</h2><p class="aviso" id="aviso-demo">Demonstração acadêmica: os campos são validados para simular o acesso. Nenhuma senha é salva ou verificada. Use dados fictícios.</p>
-<form id="form-conta" data-tipo="login" aria-describedby="aviso-demo"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" maxlength="150" required placeholder="voce@exemplo.com"><label for="senha">Senha de demonstração</label><div class="campo-senha"><input id="senha" name="senha" type="password" autocomplete="current-password" minlength="6" required aria-describedby="ajuda-senha"><button type="button" id="mostrar-senha" aria-pressed="false" aria-label="Mostrar senha de demonstração">Mostrar</button></div><p class="ajuda" id="ajuda-senha">Use pelo menos 6 caracteres fictícios.</p><button class="botao" type="submit">Simular entrada ↗</button><p id="status-conta" role="status"></p></form><p class="trocar-conta"><a href="cadastro.html">Ainda não tenho cadastro. Criar conta →</a></p></section></main>
-<footer><div class="largura rodape"><a class="logo" href="index.html">Conecta<span>Cursos</span></a><nav aria-label="Navegação do rodapé"><a href="index.html#inicio">Início</a><a href="index.html#sobre">Sobre o projeto</a><a href="index.html#cursos">Cursos</a><a href="index.html#descobrir">Descobrir meu curso</a><a href="login.html">Login</a><a href="cadastro.html">Cadastro</a></nav></div></footer>
-</body></html>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <div class="faixa-cabecalho">
+        <header class="cabecalho cabecalho-conta"><a class="logo" href="index.html"><span class="marca"
+                    aria-hidden="true">c.</span>Conecta<span>Cursos</span></a>
+            <div class="controles-cabecalho"><a class="atalho" href="index.html#cursos">Explorar cursos</a><button
+                    class="tema-botao" type="button" aria-label="Ativar modo escuro" aria-pressed="false">◐ Tema
+                    escuro</button></div>
+        </header>
+    </div>
+    <main class="largura pagina-conta" id="conteudo">
+        <section class="apresentacao-conta">
+            <p class="sobretitulo">SEU PRÓXIMO PASSO COMEÇA AQUI</p>
+            <h1>Bom ter você por aqui.</h1>
+            <p>Descubra novos interesses, encontre cursos e continue construindo sua formação.</p><a class="link"
+                href="index.html">← Voltar ao catálogo</a>
+        </section>
+        <section class="painel-conta" aria-labelledby="titulo-formulario">
+            <p class="sobretitulo">CONECTACURSOS</p>
+            <h2 id="titulo-formulario">Entre na plataforma</h2>
+            <p class="aviso" id="aviso-demo">Demonstração acadêmica: os campos são validados para simular o acesso.
+                Nenhuma senha é salva ou verificada. Use dados fictícios.</p>
+            <form id="form-conta" data-tipo="login" aria-describedby="aviso-demo"><label
+                    for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email"
+                    maxlength="150" required placeholder="voce@exemplo.com"><label for="senha">Senha de
+                    demonstração</label>
+                <div class="campo-senha"><input id="senha" name="senha" type="password" autocomplete="current-password"
+                        minlength="6" required aria-describedby="ajuda-senha"><button type="button" id="mostrar-senha"
+                        aria-pressed="false" aria-label="Mostrar senha de demonstração">Mostrar</button></div>
+                <p class="ajuda" id="ajuda-senha">Use pelo menos 6 caracteres fictícios.</p><button class="botao"
+                    type="submit">Simular entrada ↗</button>
+                <p id="status-conta" role="status"></p>
+            </form>
+            <p class="trocar-conta"><a href="cadastro.html">Ainda não tenho cadastro. Criar conta →</a></p>
+        </section>
+    </main>
+    <footer>
+        <div class="largura rodape"><a class="logo" href="index.html">Conecta<span>Cursos</span></a>
+            <nav aria-label="Navegação do rodapé"><a href="index.html#inicio">Início</a><a href="index.html#sobre">Sobre
+                    o projeto</a><a href="index.html#cursos">Cursos</a><a href="index.html#descobrir">Descobrir meu
+                    curso</a><a href="login.html">Login</a><a href="cadastro.html">Cadastro</a></nav>
+        </div>
+    </footer>
+</body>
+
+</html>

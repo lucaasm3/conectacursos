@@ -2563,4 +2563,19 @@ document.querySelector("#questionario").addEventListener("submit", evento => {
   });
   destino.append(listaSugestoes);
 });
+/* Atalho de favoritos do rodapé */
+
+const favoritosNoRodape = document.getElementById('rodape-favoritos');
+
+if (favoritosNoRodape) {
+  favoritosNoRodape.addEventListener('click', (evento) => {
+    evento.preventDefault();
+    document.getElementById('atalho-favoritos')?.click();
+  });
+}
+
+// Permite acessar favoritos pelas páginas de login e cadastro.
+if (window.location.hash === '#favoritos') {
+  document.getElementById('atalho-favoritos')?.click();
+}
 exibirCursos();
