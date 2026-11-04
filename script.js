@@ -607,7 +607,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "médio"
+        "Médio"
       ],
       [
         "Idioma",
@@ -663,7 +663,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "médio"
+        "Médio"
       ],
       [
         "Idioma",
@@ -719,7 +719,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
@@ -775,7 +775,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
@@ -831,7 +831,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "básico"
+        "Básico"
       ],
       [
         "Idioma",
@@ -887,7 +887,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "médio"
+        "Médio"
       ],
       [
         "Idioma",
@@ -991,7 +991,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
@@ -1043,7 +1043,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
@@ -1095,7 +1095,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
@@ -1199,7 +1199,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
@@ -1251,7 +1251,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
@@ -1303,7 +1303,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
@@ -1355,7 +1355,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
@@ -1407,7 +1407,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
@@ -1459,7 +1459,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
@@ -1511,7 +1511,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
@@ -1563,7 +1563,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
@@ -1615,7 +1615,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
@@ -1667,7 +1667,7 @@ const cursos = [
       ],
       [
         "Nível",
-        "extensão."
+        "Extensão."
       ],
       [
         "Idioma",
