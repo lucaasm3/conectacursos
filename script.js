@@ -111,7 +111,7 @@ const cursos = [
       ]
     ],
     "link": "https://moodle.ifrs.edu.br/course/view.php?id=10448",
-    "imagem": "images/cultutadigital.jpg",
+    "imagem": "images/cultutadigital1.jpg",
     "nivel": "básico"
   },
   {
