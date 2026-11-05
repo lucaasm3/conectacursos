@@ -1703,7 +1703,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/conceitos-de-aprendizagem-criativa",
-    "imagem": "images/fundacaoo.png",
+    "imagem": "images/fundacaooo.png",
     "nivel": "Não informado"
   },
   {
@@ -1731,7 +1731,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/design-thinking-para-educadores",
-    "imagem": "images/fundacaoo.png",
+    "imagem": "images/fundacaooo.png",
     "nivel": "Não informado"
   },
   {
@@ -1759,7 +1759,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/educacao-inclusiva",
-    "imagem": "images/fundacaoo.png",
+    "imagem": "images/fundacaooo.png",
     "nivel": "Não informado"
   },
   {
@@ -1787,7 +1787,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/educacao-financeira",
-    "imagem": "images/fundacaoo.png",
+    "imagem": "images/fundacaooo.png",
     "nivel": "Não informado"
   },
   {
@@ -1843,7 +1843,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/comunicacao-empresarial",
-    "imagem": "images/fundacaoo.png",
+    "imagem": "images/fundacaooo.png",
     "nivel": "básico"
   },
   {
@@ -1899,7 +1899,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/fundamentos-de-ti-hardware-e-software",
-    "imagem": "images/fundacaoo.png",
+    "imagem": "images/fundacaooo.png",
     "nivel": "Iniciante"
   },
   {
@@ -1955,7 +1955,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/crie-um-site-simples-usando-html-css-e-javascript",
-    "imagem": "images/fundacaoo.png",
+    "imagem": "images/fundacaooo.png",
     "nivel": "Iniciante"
   },
   {
@@ -2011,7 +2011,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/linguagem-de-programacao-python-basico",
-    "imagem": "images/fundacaoo.png",
+    "imagem": "images/fundacaooo.png",
     "nivel": "Iniciante"
   },
   {
@@ -2067,7 +2067,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/introducao-ao-scratch-linguagem-de-programacao-na-computacao-criativa",
-    "imagem": "images/fundacaoo.png",
+    "imagem": "images/fundacaooo.png",
     "nivel": "Iniciante"
   },
   {
@@ -2119,7 +2119,7 @@ const cursos = [
       ]
     ],
     "link": "https://www.ev.org.br/cursos/scratch-suas-extensoes-e-computacao-fisica",
-    "imagem": "images/fundacaoo.png",
+    "imagem": "images/fundacaooo.png",
     "nivel": "Iniciante"
   },
   {
