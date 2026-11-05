@@ -1611,3 +1611,23 @@ img[src*="aperfeiçoamentoemsaúdemental"] {
     object-fit: contain;
     background-color: white;
 }
+
+#detalhe-imagem {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+#detalhe-imagem .imagem-curso {
+  display: block;
+  height: auto;
+  min-height: 0;
+  border-radius: 0;
+}
+
+#detalhe-imagem .imagem-curso img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+}

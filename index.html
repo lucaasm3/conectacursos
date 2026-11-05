@@ -46,7 +46,7 @@
           <p>Explore. Escolha. Evolua.</p>
           <div class="barras" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
         </div>
-        </div>
+      </div>
       </div>
     </section>
     <section class="sobre largura iniciativa" id="sobre">
@@ -120,10 +120,48 @@
         </select>
         <label for="objetivo">Qual é seu objetivo?</label><select id="objetivo" required>
           <option value="">Selecione seu objetivo</option>
-          <option value="Começar">Começar com cursos mais curtos</option>
-          <option value="Currículo">Priorizar uma formação mais longa</option>
+
+          <option value="Começar">
+            Começar com cursos mais curtos
+          </option>
+
+          <option value="Currículo">
+            Priorizar uma formação mais longa
+          </option>
+
+          <option value="programacao">
+            Aprender programação e criar sites
+          </option>
+
+          <option value="bancos">
+            Aprender sobre bancos de dados
+          </option>
+
+          <option value="ensino">
+            Melhorar minhas práticas de ensino
+          </option>
+
+          <option value="saude">
+            Aprofundar conhecimentos em saúde
+          </option>
+
+          <option value="profissional">
+            Desenvolver habilidades profissionais
+          </option>
+
+          <option value="seguranca">
+            Aprender sobre segurança digital
+          </option>
+
+          <option value="financas">
+            Organizar minhas finanças
+          </option>
         </select>
-        <label for="tempo">Quanto tempo você tem disponível?</label><select id="tempo">
+        <label for="tempo">
+          Quanto tempo você tem disponível?
+        </label>
+
+        <select id="tempo">
           <option value="5">Até 5 horas</option>
           <option value="20" selected>Até 20 horas</option>
           <option value="40">Até 40 horas</option>
@@ -135,42 +173,42 @@
       </form>
     </section>
   </main>
-<footer class="rodape-novo">
-  <div class="largura rodape-novo__grade">
+  <footer class="rodape-novo">
+    <div class="largura rodape-novo__grade">
 
-    <div class="rodape-novo__identidade">
-      <a class="rodape-novo__logo" href="#inicio" aria-label="ConectaCursos: página inicial">
-        <span class="rodape-novo__marca" aria-hidden="true">c.</span>
-        <span class="rodape-novo__nome">Conecta<span>Cursos</span></span>
-      </a>
-      <p>Aprendizado que conecta possibilidades.</p>
+      <div class="rodape-novo__identidade">
+        <a class="rodape-novo__logo" href="#inicio" aria-label="ConectaCursos: página inicial">
+          <span class="rodape-novo__marca" aria-hidden="true">c.</span>
+          <span class="rodape-novo__nome">Conecta<span>Cursos</span></span>
+        </a>
+        <p>Aprendizado que conecta possibilidades.</p>
+      </div>
+
+      <nav class="rodape-novo__links" aria-label="Atalhos do rodapé">
+        <h2>Atalhos</h2>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre o projeto</a>
+        <a href="#cursos">Explorar cursos</a>
+        <a href="#descobrir">Descobrir meu curso</a>
+      </nav>
+
+      <nav class="rodape-novo__links" aria-label="Conta e preferências">
+        <h2>Conta e preferências</h2>
+        <a href="login.html">Entrar</a>
+        <a href="cadastro.html">Criar conta</a>
+        <a href="#cursos" id="rodape-favoritos">Meus favoritos</a>
+        <button type="button" class="tema-botao rodape-novo__tema">
+          Alternar modo claro/escuro
+        </button>
+      </nav>
+
+      <div class="rodape-novo__final">
+        <p>Protótipo acadêmico · 2026</p>
+        <a href="#inicio">Voltar ao topo ↑</a>
+      </div>
+
     </div>
-
-    <nav class="rodape-novo__links" aria-label="Atalhos do rodapé">
-      <h2>Atalhos</h2>
-      <a href="#inicio">Início</a>
-      <a href="#sobre">Sobre o projeto</a>
-      <a href="#cursos">Explorar cursos</a>
-      <a href="#descobrir">Descobrir meu curso</a>
-    </nav>
-
-    <nav class="rodape-novo__links" aria-label="Conta e preferências">
-      <h2>Conta e preferências</h2>
-      <a href="login.html">Entrar</a>
-      <a href="cadastro.html">Criar conta</a>
-      <a href="#cursos" id="rodape-favoritos">Meus favoritos</a>
-      <button type="button" class="tema-botao rodape-novo__tema">
-        Alternar modo claro/escuro
-      </button>
-    </nav>
-
-    <div class="rodape-novo__final">
-      <p>Protótipo acadêmico · 2026</p>
-      <a href="#inicio">Voltar ao topo ↑</a>
-    </div>
-
-  </div>
-</footer>
+  </footer>
   <dialog id="detalhes" aria-labelledby="detalhe-titulo">
     <div class="dialogo-topo">
       <p class="sobretitulo">CONHEÇA O CURSO</p><button id="fechar-detalhes" class="fechar" type="button"

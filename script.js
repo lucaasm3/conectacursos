@@ -2542,15 +2542,91 @@ document.querySelector("#questionario").addEventListener("submit", evento => {
   const objetivo = document.querySelector("#objetivo").value;
   const tempo = Number(document.querySelector("#tempo").value);
   const destino = document.querySelector("#recomendacao");
-  const compativeis = cursos.filter(curso => curso.area === interesse && curso.horas <= tempo);
+  // Palavras dos nomes dos cursos relacionadas a cada objetivo.
+const palavrasPorObjetivo = {
+  programacao: [
+    "programador web",
+    "desenvolvimento",
+    "html",
+    "python",
+    "scratch"
+  ],
+
+  bancos: [
+    "banco de dados",
+    "sql",
+    "ciencia de dados"
+  ],
+
+  ensino: [
+    "ensino",
+    "educacao",
+    "aprendizagem",
+    "educadores",
+    "gestao escolar",
+    "material didatico",
+    "cultura e identidade do surdo",
+    "autismo"
+  ],
+
+  saude: [
+    "saude",
+    "epidemiologia",
+    "cuidador",
+    "socorros",
+    "paciente",
+    "desnutricao",
+    "sus",
+    "superdotacao"
+  ],
+
+  profissional: [
+    "comunicacao empresarial",
+    "scrum",
+    "git e github",
+    "gestao escolar"
+  ],
+
+  seguranca: [
+    "ciberseguranca",
+    "fundamentos de ti"
+  ],
+
+  financas: [
+    "educacao financeira"
+  ]
+};
+
+const palavras = palavrasPorObjetivo[objetivo] || [];
+
+const compativeis = cursos.filter(curso => {
+  const nome = normalizar(curso.nome);
+
+  const combinaComObjetivo =
+    palavras.length === 0 ||
+    palavras.some(palavra => nome.includes(palavra));
+
+  return (
+    curso.area === interesse &&
+    curso.horas <= tempo &&
+    combinaComObjetivo
+  );
+});
   // Critério transparente: a área e o tempo filtram, o objetivo ordena por duração.
   const sugestoes = [...compativeis].sort((a, b) => objetivo === "Começar" ? a.horas - b.horas : b.horas - a.horas).slice(0, 3);
   destino.replaceChildren();
   if (!sugestoes.length) {
-    destino.append(elemento("p", "", "Ainda não temos uma opção para essa combinação. Experimente ampliar o tempo disponível."));
+    destino.append(elemento("p", "", "Ainda não temos uma opção para essa combinação. Experimente mudar a área, objetivo ou ampliar o tempo disponível."));
     return;
   }
-  const motivo = `Cursos de ${interesse} com até ${tempo} horas, priorizando ${objetivo === "Começar" ? "as menores" : "as maiores"} cargas horárias. Confira também os requisitos de cada curso:`;
+  const objetivoSelecionado = document.querySelector(
+  "#objetivo option:checked"
+).textContent.trim();
+
+const motivo =
+  `Cursos de ${interesse}, com até ${tempo} horas, ` +
+  `para o objetivo: ${objetivoSelecionado}. ` +
+  `Confira os requisitos de cada curso antes da inscrição.`;
   destino.append(elemento("strong", "", "Seu próximo passo pode estar aqui."), elemento("p", "", motivo));
   const listaSugestoes = elemento("ul");
   sugestoes.forEach(curso => {
