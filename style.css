@@ -1607,3 +1607,7 @@ footer.rodape-novo {
     grid-column: auto;
   }
 }
+img[src*="aperfeiçoamentoemsaúdemental"] {
+    object-fit: contain;
+    background-color: white;
+}
