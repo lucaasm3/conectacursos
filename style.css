@@ -43,15 +43,21 @@ select {
     -webkit-tap-highlight-color: transparent
 }
 
-button {
+button, select{
     cursor: pointer
+}
+
+select option:hover,
+select option:focus {
+    background: var(--verde);
+    color: white
 }
 
 button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 select:focus-visible {
-    outline: 3px solid #8055b0;
+    outline: 3px solid var(--verde);
     outline-offset: 4px
 }
 
