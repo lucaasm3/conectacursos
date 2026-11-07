@@ -1566,3 +1566,37 @@ img[src*="aperfeiçoamentoemsaúdemental"] {
   height: auto;
   max-height: none;
 }
+
+/* Mostrar mais e menos cursos */
+
+#lista-cursos.reduzido {
+    position: relative;
+}
+
+/* Esconde os cards a partir do quarto */
+#lista-cursos.reduzido > .curso:nth-child(n + 4) {
+    display: none;
+}
+
+/* Botão mostrar mais / menos */
+.mostrar-cursos {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 25px;
+    border: 1px solid var(--borda);
+    border-radius: 25px;
+    background: var(--painel);
+    color: var(--verde);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.mostrar-cursos:hover {
+    transform: translateY(-2px);
+}
+/* Imagens dos cursos FGV */
+.imagem-curso img[src$="fgv.png"] {
+    object-fit: contain;
+    background-color: white;
+}

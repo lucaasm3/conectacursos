@@ -2400,6 +2400,7 @@ const duracao = document.querySelector("#duracao");
 const plataforma = document.querySelector("#plataforma");
 const soFavoritos = document.querySelector("#so-favoritos");
 const lista = document.querySelector("#lista-cursos");
+const botaoMostrarCursos = document.querySelector("#mostrar-cursos");
 const dialogo = document.querySelector("#detalhes");
 const normalizar = texto => texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR");
 
@@ -2414,14 +2415,17 @@ function elemento(tag, classe, texto) {
 // Um campo de imagem atende aos dois locais. Sem arquivo, mostramos o espaço reservado.
 function imagemCurso(curso) {
   const caixa = elemento("div", "imagem-curso");
+  const caminhoImagem = curso.plataforma === "FGV"
+  ? "images/fgv.png"
+  : curso.imagem;
   const reservado = () => {
     caixa.replaceChildren(elemento("span", "imagem-simbolo", "▧"), elemento("span", "", "Insira imagem"));
     caixa.setAttribute("role", "img");
     caixa.setAttribute("aria-label", `Espaço para imagem do curso ${curso.nome}`);
   };
-  if (curso.imagem) {
+  if (caminhoImagem) {
     const imagem = document.createElement("img");
-    imagem.src = curso.imagem;
+    imagem.src = caminhoImagem;
     imagem.alt = `Imagem do curso ${curso.nome}`;
     imagem.loading = "lazy";
     imagem.addEventListener("error", reservado, { once: true });
@@ -2499,7 +2503,26 @@ function exibirCursos() {
     cartao.append(capa, corpo);
     lista.append(cartao);
   });
+  const temMaisCursos = encontrados.length > 3;
+
+  lista.classList.toggle("reduzido", temMaisCursos);
+  botaoMostrarCursos.hidden = !temMaisCursos;
+  botaoMostrarCursos.textContent = "Mostrar mais cursos ↓";
+  botaoMostrarCursos.setAttribute("aria-expanded", "false");
 }
+
+botaoMostrarCursos.addEventListener("click", () => {
+  const reduzido = lista.classList.toggle("reduzido");
+
+  botaoMostrarCursos.textContent = reduzido
+    ? "Mostrar mais cursos ↓"
+    : "Mostrar menos cursos ↑";
+
+  botaoMostrarCursos.setAttribute(
+    "aria-expanded",
+    String(!reduzido)
+  );
+});
 
 pesquisa.addEventListener("input", exibirCursos);
 duracao.addEventListener("change", exibirCursos);
