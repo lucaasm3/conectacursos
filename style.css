@@ -1,3 +1,6 @@
+/* ==========================================================================
+   1. VARIÁVEIS GLOBAIS E CONFIGURAÇÕES INICIAIS (:root)
+   ================================================================---------- */
 :root {
     --verde: #174c3c;
     --verde-claro: #e7efdd;
@@ -5,802 +8,7 @@
     --cinza: #59665e;
     --fundo: #fbfcf8;
     --borda: #dce3da;
-    --lilas: #ebe5f4
-}
-
-* {
-    box-sizing: border-box
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 25px
-}
-
-body {
-    margin: 0;
-    background: var(--fundo);
-    color: var(--texto);
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6
-}
-
-a {
-    color: inherit;
-    text-decoration: none
-}
-
-button,
-input,
-select {
-    font: inherit
-}
-
-button,
-a,
-input,
-select {
-    -webkit-tap-highlight-color: transparent
-}
-
-button, select{
-    cursor: pointer
-}
-
-select option:hover,
-select option:focus {
-    background: var(--verde);
-    color: white
-}
-
-button:focus-visible,
-a:focus-visible,
-input:focus-visible,
-select:focus-visible {
-    outline: 3px solid var(--verde);
-    outline-offset: 4px
-}
-
-.largura {
-    width: min(1160px, 90%);
-    margin-inline: auto
-}
-
-.cabecalho {
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    width: min(1300px, 94%);
-    margin: auto;
-    border-bottom: 1px solid var(--borda)
-}
-
-.logo {
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: -.8px;
-    white-space: nowrap
-}
-
-.logo>span:not(.marca) {
-    color: #567f5b
-}
-
-.marca {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    background: var(--verde);
-    color: white;
-    border-radius: 11px;
-    margin-right: 9px
-}
-
-.cabecalho nav {
-    display: flex;
-    gap: 25px;
-    font-size: 14px
-}
-
-.cabecalho nav a:hover,
-.link:hover {
-    text-decoration: underline
-}
-
-.atalho {
-    border: 1px solid var(--borda);
-    border-radius: 24px;
-    padding: 9px 15px;
-    font-size: 13px
-}
-
-.atalho span {
-    margin-left: 8px
-}
-
-.menu-botao {
-    display: none
-}
-
-.hero {
-    display: grid;
-    grid-template-columns: 1.15fr 1fr;
-    align-items: center;
-    gap: 60px;
-    padding-block: 80px 85px
-}
-
-.sobretitulo {
-    font-size: 11px;
-    letter-spacing: 2px;
-    font-weight: 800;
-    color: #486e52;
-    margin: 0 0 17px
-}
-
-h1 {
-    font-size: clamp(36px, 4.4vw, 58px);
-    letter-spacing: -2.7px;
-    line-height: 1.12;
-    margin: 0 0 25px
-}
-
-h1 em {
-    font-style: normal;
-    color: #587d44
-}
-
-h2 {
-    font-size: 32px;
-    line-height: 1.2;
-    letter-spacing: -1px;
-    margin: 0 0 16px
-}
-
-.introducao {
-    max-width: 470px;
-    font-size: 16px;
-    color: var(--cinza)
-}
-
-.acoes {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    margin-top: 30px;
-    flex-wrap: wrap
-}
-
-.botao {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    border: 0;
-    border-radius: 8px;
-    background: var(--verde);
-    color: white;
-    padding: 14px 22px;
-    font-weight: 700;
-    font-size: 14px
-}
-
-.botao:hover {
-    background: #28634e
-}
-
-.link {
-    font-size: 14px;
-    font-weight: 700
-}
-
-.nota {
-    font-size: 12px;
-    color: var(--cinza);
-    margin-top: 22px
-}
-
-.visual {
-    display: grid;
-    place-items: center;
-    min-height: 370px;
-}
-
-.visual img {
-    display: block;
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-    object-fit: contain;
-}
-
-.etiqueta {
-    position: absolute;
-    font-size: 11px;
-    font-weight: 700;
-    background: white;
-    border: 1px solid var(--borda);
-    box-shadow: 0 5px 20px #20392e0a;
-    padding: 12px 17px;
-    border-radius: 10px;
-    z-index: 1
-}
-
-.flutuante {
-    top: 15px;
-    right: 0;
-    background: var(--lilas)
-}
-
-.inferior {
-    bottom: 0;
-    left: 0
-}
-
-.check {
-    background: var(--verde);
-    color: white;
-    padding: 4px 7px;
-    border-radius: 50%;
-    margin-right: 8px
-}
-
-.catalogo {
-    background: white;
-    border-block: 1px solid var(--borda);
-    padding: 60px 0
-}
-
-.titulo-linha {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px
-}
-
-.titulo-linha>p {
-    font-size: 13px;
-    color: var(--cinza)
-}
-
-.aviso {
-    font-size: 12px;
-    border-left: 3px solid #a49d70;
-    padding: 9px 12px;
-    background: #f7f5ec;
-    color: #59543c
-}
-
-.filtros {
-    display: grid;
-    grid-template-columns: 1fr 220px auto;
-    gap: 20px;
-    align-items: end;
-    margin-top: 30px
-}
-
-label {
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
-    margin-bottom: 6px
-}
-
-input[type=search],
-select {
-    width: 100%;
-    background: var(--fundo);
-    border: 1px solid #c4cec2;
-    border-radius: 7px;
-    padding: 12px;
-    color: var(--texto);
-    min-height: 46px
-}
-
-.favoritos-filtro {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    min-height: 46px;
-    margin: 0
-}
-
-.favoritos-filtro input {
-    accent-color: var(--verde);
-    width: 17px;
-    height: 17px
-}
-
-.categorias {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 23px 0
-}
-
-.categoria {
-    background: white;
-    border: 1px solid var(--borda);
-    border-radius: 24px;
-    padding: 9px 18px;
-    font-size: 13px;
-    color: var(--texto)
-}
-
-.categoria.ativo {
-    background: var(--verde);
-    color: white;
-    border-color: var(--verde)
-}
-
-.contador {
-    font-size: 12px;
-    color: var(--cinza);
-    min-height: 20px
-}
-
-.grade {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px
-}
-
-.curso {
-    border: 1px solid var(--borda);
-    border-radius: 13px;
-    overflow: hidden;
-    background: white;
-    display: flex;
-    flex-direction: column
-}
-
-.capa {
-    height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden
-}
-
-.capa::before,
-.capa::after {
-    content: "";
-    position: absolute;
-    border: 1px solid #ffffff99;
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
-    right: -20px;
-    top: -90px
-}
-
-.capa::after {
-    right: auto;
-    top: 30px;
-    left: -55px
-}
-
-.tecnologia {
-    background: #e5e9f3;
-    color: #44557f
-}
-
-.saude {
-    background: #e5eddf;
-    color: #456c42
-}
-
-.administracao {
-    background: #f4e7db;
-    color: #8b6441
-}
-
-.educacao {
-    background: var(--lilas);
-    color: #766094
-}
-
-.simbolo {
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: -3px
-}
-
-.salvar {
-    position: absolute;
-    right: 13px;
-    top: 13px;
-    border: 0;
-    border-radius: 50%;
-    width: 34px;
-    height: 34px;
-    background: white;
-    color: var(--verde);
-    font-size: 22px;
-    z-index: 1
-}
-
-.salvar[aria-pressed=true] {
-    background: var(--verde);
-    color: white
-}
-
-.corpo-curso {
-    padding: 21px;
-    display: flex;
-    flex-direction: column;
-    flex: 1
-}
-
-.tipo {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #59665e
-}
-
-.curso h3 {
-    font-size: 19px;
-    line-height: 1.3;
-    margin: 10px 0
-}
-
-.curso p {
-    font-size: 13px;
-    color: var(--cinza);
-    margin: 0 0 15px
-}
-
-.metadados {
-    display: flex;
-    gap: 12px;
-    font-size: 11px;
-    color: var(--cinza);
-    margin-top: auto
-}
-
-.detalhar {
-    background: none;
-    border: 0;
-    border-top: 1px solid var(--borda);
-    padding: 14px 0 0;
-    margin-top: 18px;
-    text-align: left;
-    color: var(--verde);
-    font-size: 13px;
-    font-weight: 700
-}
-
-.vazio {
-    grid-column: 1/-1;
-    background: var(--fundo);
-    padding: 30px;
-    border-radius: 10px
-}
-
-.descoberta {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-    padding: 75px 55px;
-    margin-block: 60px;
-    background: #edf1e5;
-    border-radius: 22px
-}
-
-.descoberta h2 {
-    font-size: 39px
-}
-
-.descoberta-texto>p:not(.sobretitulo) {
-    font-size: 14px;
-    color: var(--cinza);
-    max-width: 350px
-}
-
-.selo {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 700;
-    margin-top: 15px
-}
-
-#questionario {
-    background: white;
-    border: 1px solid var(--borda);
-    padding: 26px;
-    border-radius: 14px
-}
-
-#questionario select {
-    margin-bottom: 16px
-}
-
-#questionario .botao {
-    width: 100%;
-    padding-inline: 10px
-}
-
-#recomendacao {
-    font-size: 13px
-}
-
-#recomendacao:not(:empty) {
-    margin-top: 20px;
-    border-top: 1px solid var(--borda);
-    padding-top: 15px
-}
-
-#recomendacao ul {
-    padding-left: 20px
-}
-
-#recomendacao button {
-    background: none;
-    border: 0;
-    text-decoration: underline;
-    color: var(--verde);
-    text-align: left;
-    font: inherit;
-    padding: 4px 0
-}
-
-.sobre {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    padding-block: 15px 70px
-}
-
-.sobre p:not(.sobretitulo) {
-    font-size: 14px;
-    color: var(--cinza)
-}
-
-footer {
-    border-top: 1px solid var(--borda)
-}
-
-.rodape {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding-block: 28px
-}
-
-.rodape p,
-.rodape>a:last-child {
-    font-size: 12px;
-    color: var(--cinza)
-}
-
-dialog {
-    width: min(550px, 90%);
-    border: 1px solid var(--borda);
-    border-radius: 16px;
-    padding: 30px;
-    color: var(--texto)
-}
-
-dialog::backdrop {
-    background: #122d2377
-}
-
-.dialogo-topo {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: start
-}
-
-.fechar {
-    background: #edf1e5;
-    border: 0;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    font-size: 24px;
-    color: var(--verde)
-}
-
-.pular {
-    position: absolute;
-    left: 20px;
-    top: -100px;
-    background: white;
-    padding: 10px;
-    z-index: 10
-}
-
-.pular:focus {
-    top: 10px
-}
-
-@media(max-width:1000px) {
-    .cabecalho {
-        flex-wrap: wrap;
-        padding: 20px 0
-    }
-
-    .cabecalho nav {
-        order: 3;
-        width: 100%;
-        justify-content: center
-    }
-
-    .hero {
-        gap: 20px
-    }
-
-    .filtros {
-        grid-template-columns: 1fr 180px
-    }
-
-    .favoritos-filtro {
-        grid-column: 1/-1;
-        min-height: 25px
-    }
-
-    .descoberta {
-        gap: 35px;
-        padding: 40px
-    }
-
-    .grade {
-        gap: 15px
-    }
-
-    .sobre {
-        gap: 35px
-    }
-}
-
-@media(max-width:650px) {
-    h1 {
-        letter-spacing: -1.8px
-    }
-
-    .cabecalho {
-        gap: 12px
-    }
-
-    .logo {
-        font-size: 19px
-    }
-
-    .menu-botao {
-        display: block;
-        background: white;
-        border: 1px solid var(--borda);
-        border-radius: 7px;
-        padding: 7px 10px;
-        font-size: 12px
-    }
-
-    .cabecalho nav {
-        display: none;
-        flex-direction: column;
-        gap: 14px;
-        padding: 10px
-    }
-
-    .cabecalho nav.aberto {
-        display: flex
-    }
-
-    .atalho {
-        width: 100%;
-        text-align: center;
-        order: 4
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-        padding-block: 42px
-    }
-
-    .visual {
-        min-height: 370px;
-        margin-top: 15px
-    }
-
-    .flutuante {
-        right: 0
-    }
-
-    .titulo-linha {
-        display: block
-    }
-
-    .titulo-linha>p {
-        display: none
-    }
-
-    h2 {
-        font-size: 27px
-    }
-
-    .catalogo {
-        padding: 38px 0
-    }
-
-    .filtros {
-        grid-template-columns: 1fr
-    }
-
-    .favoritos-filtro {
-        grid-column: auto
-    }
-
-    .grade {
-        grid-template-columns: 1fr
-    }
-
-    .capa {
-        height: 145px
-    }
-
-    .categorias {
-        gap: 8px
-    }
-
-    .categoria {
-        padding: 8px 12px;
-        font-size: 12px
-    }
-
-    .descoberta {
-        grid-template-columns: 1fr;
-        padding: 28px 22px;
-        margin-block: 35px;
-        gap: 25px
-    }
-
-    .descoberta h2 {
-        font-size: 33px
-    }
-
-    #questionario {
-        padding: 18px
-    }
-
-    .sobre {
-        grid-template-columns: 1fr;
-        gap: 5px;
-        padding-bottom: 35px
-    }
-
-    .rodape {
-        flex-direction: column;
-        align-items: start;
-        gap: 8px
-    }
-
-    .rodape p {
-        margin: 0
-    }
-
-    .acoes {
-        gap: 18px
-    }
-}
-
-@media(prefers-reduced-motion:reduce) {
-    html {
-        scroll-behavior: auto
-    }
-}
-
-/* Atualização do projeto original: cabeçalho, catálogo completo, detalhes e contas. */
-:root {
+    --lilas: #ebe5f4;
     --painel: #ffffff;
     --suave: #edf1e5;
     --campo: #fbfcf8;
@@ -809,33 +17,122 @@ dialog::backdrop {
     color-scheme: light;
 }
 
+/* Reset básico de margens e box-sizing para todos os elementos */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25px;
+}
+
+body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   2. ELEMENTOS GLOBAIS, ACESSIBILIDADE E TIPOGRAFIA
+   ================================================================---------- */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button, input, select {
+    font: inherit;
+}
+
+button, a, input, select {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button, select {
+    cursor: pointer;
+}
+
+/* Estilo para opções selecionadas em menus de seleção (select) */
+select option:hover,
+select option:focus {
+    background: var(--verde);
+    color: white;
+}
+
+/* Indicador visual de foco acessível para navegação via teclado */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--verde);
+    outline-offset: 4px;
+}
+
+/* Classes utilitárias de layout responsivo */
+.largura {
+    width: min(1160px, 90%);
+    margin-inline: auto;
+}
+
 [hidden] {
     display: none !important;
 }
 
+
+/* ==========================================================================
+   3. CABEÇALHO E NAVEGAÇÃO PRINCIPAL
+   ================================================================---------- */
 .faixa-cabecalho {
     background: #123b30;
     color: #f5f8ef;
 }
 
 .cabecalho {
-    border: 0;
     min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 20px;
+    width: min(1300px, 94%);
+    margin: auto;
+    border: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -.8px;
+    white-space: nowrap;
 }
 
 .cabecalho .logo>span:not(.marca) {
     color: #bed69e;
 }
 
-.cabecalho .marca {
+.marca {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
     background: #e5efcf;
     color: #173f32;
+    border-radius: 11px;
+    margin-right: 9px;
 }
 
 .cabecalho nav {
+    display: flex;
     gap: 19px;
     font-size: 13px;
+}
+
+.cabecalho nav a:hover,
+.link:hover {
+    text-decoration: underline;
 }
 
 .controles-cabecalho {
@@ -870,6 +167,105 @@ dialog::backdrop {
     background: #285444;
 }
 
+.menu-botao {
+    display: none;
+}
+
+
+/* ==========================================================================
+   4. SEÇÃO HERO (DESTAQUE INICIAL) E SOBRE O PROJETO
+   ================================================================---------- */
+.hero {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    align-items: center;
+    gap: 60px;
+    padding-block: 80px 85px;
+}
+
+.sobretitulo {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: #486e52;
+    margin: 0 0 17px;
+}
+
+h1 {
+    font-size: clamp(36px, 4.4vw, 58px);
+    letter-spacing: -2.7px;
+    line-height: 1.12;
+    margin: 0 0 25px;
+}
+
+h1 em {
+    font-style: normal;
+    color: #587d44;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin: 0 0 16px;
+}
+
+.introducao {
+    max-width: 470px;
+    font-size: 16px;
+    color: var(--cinza);
+}
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--verde);
+    color: white;
+    padding: 14px 22px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.botao:hover {
+    background: #28634e;
+}
+
+.link {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nota {
+    font-size: 12px;
+    color: var(--cinza);
+    margin-top: 22px;
+}
+
+.visual {
+    display: grid;
+    place-items: center;
+    min-height: 370px;
+}
+
+.visual img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+}
 
 .iniciativa {
     border-top: 1px solid var(--borda);
@@ -884,6 +280,35 @@ dialog::backdrop {
     font-size: 29px;
 }
 
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding-block: 15px 70px;
+}
+
+.sobre p:not(.sobretitulo) {
+    font-size: 14px;
+    color: var(--cinza);
+}
+
+
+/* ==========================================================================
+   5. CATÁLOGO, FILTROS E CARDS DE CURSOS
+   ================================================================---------- */
+.catalogo {
+    background: white;
+    border-block: 1px solid var(--borda);
+    padding: 60px 0;
+}
+
+.titulo-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
 .nota-catalogo {
     font-size: 13px;
     color: var(--cinza);
@@ -891,22 +316,98 @@ dialog::backdrop {
 }
 
 .filtros {
+    display: grid;
     grid-template-columns: minmax(220px, 1fr) 190px 200px;
+    gap: 20px;
+    align-items: end;
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+input[type=search],
+select {
+    width: 100%;
+    background: var(--fundo);
+    border: 1px solid #c4cec2;
+    border-radius: 7px;
+    padding: 12px;
+    color: var(--texto);
+    min-height: 46px;
 }
 
 .favoritos-filtro {
-    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     min-height: 25px;
+    margin: 0;
+    grid-column: 1/-1;
+}
+
+.favoritos-filtro input {
+    accent-color: var(--verde);
+    width: 17px;
+    height: 17px;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 23px 0;
+}
+
+.categoria {
+    background: white;
+    border: 1px solid var(--borda);
+    border-radius: 24px;
+    padding: 9px 18px;
+    font-size: 13px;
+    color: var(--texto);
+}
+
+.categoria.ativo {
+    background: var(--verde);
+    color: white;
+    border-color: var(--verde);
+}
+
+.contador {
+    font-size: 12px;
+    color: var(--cinza);
+    min-height: 20px;
+}
+
+/* Grade de exibição dos cursos */
+.grade {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.curso {
+    border: 1px solid var(--borda);
+    border-radius: 13px;
+    overflow: hidden;
+    background: var(--painel);
+    display: flex;
+    flex-direction: column;
 }
 
 .capa {
     height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
     background: var(--imagem);
-}
-
-.capa::before,
-.capa::after {
-    display: none;
 }
 
 .imagem-curso {
@@ -923,11 +424,6 @@ dialog::backdrop {
     font-size: 13px;
 }
 
-.imagem-simbolo {
-    font-size: 35px;
-    line-height: 1;
-}
-
 .imagem-curso img {
     display: block;
     width: 100%;
@@ -935,16 +431,53 @@ dialog::backdrop {
     object-fit: cover;
 }
 
+/* Botão de salvar/favoritar o curso no card */
 .salvar {
+    position: absolute;
+    right: 13px;
+    top: 13px;
     border: 1px solid var(--borda);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    background: white;
+    color: var(--verde);
+    font-size: 22px;
+    z-index: 1;
+}
+
+.salvar[aria-pressed=true] {
+    background: var(--verde);
+    color: white;
 }
 
 .corpo-curso {
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     background: var(--painel);
 }
 
+.tipo {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #59665e;
+}
+
 .curso h3 {
+    font-size: 19px;
+    line-height: 1.3;
+    margin: 10px 0;
     overflow-wrap: anywhere;
+}
+
+.curso p {
+    font-size: 13px;
+    color: var(--cinza);
+    margin: 0 0 15px;
 }
 
 .resumo-curso {
@@ -953,29 +486,117 @@ dialog::backdrop {
 
 .metadados {
     display: block;
+    font-size: 11px;
+    color: var(--cinza);
+    margin-top: auto;
     overflow-wrap: anywhere;
 }
 
-.rodape nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 20px;
-    font-size: 12px;
-    max-width: 520px;
+.detalhar {
+    background: none;
+    border: 0;
+    border-top: 1px solid var(--borda);
+    padding: 14px 0 0;
+    margin-top: 18px;
+    text-align: left;
+    color: var(--verde);
+    font-size: 13px;
+    font-weight: 700;
 }
 
-.rodape nav a:hover {
-    text-decoration: underline;
+/* Botão de mostrar mais ou menos cursos */
+#lista-cursos.reduzido {
+    position: relative;
 }
 
-.rodape>div>p {
-    margin: 6px 0 0;
+#lista-cursos.reduzido > .curso:nth-child(n + 4) {
+    display: none;
 }
 
-/* Janela ampliada: imagem, descrição completa e especificações. */
+.mostrar-cursos {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 25px;
+    border: 1px solid var(--borda);
+    border-radius: 25px;
+    background: var(--painel);
+    color: var(--verde);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.mostrar-cursos:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================================================
+   6. SEÇÃO DE DESCOBERTA (QUESTIONÁRIO DE RECOMENDAÇÃO)
+   ================================================================---------- */
+.descoberta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    padding: 75px 55px;
+    margin-block: 60px;
+    background: #edf1e5;
+    border-radius: 22px;
+}
+
+.descoberta h2 {
+    font-size: 39px;
+}
+
+.descoberta-texto>p:not(.sobretitulo) {
+    font-size: 14px;
+    color: var(--cinza);
+    max-width: 350px;
+}
+
+.selo {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+#questionario {
+    background: white;
+    border: 1px solid var(--borda);
+    padding: 26px;
+    border-radius: 14px;
+}
+
+#questionario select {
+    margin-bottom: 16px;
+}
+
+#questionario .botao {
+    width: 100%;
+    padding-inline: 10px;
+}
+
+#recomendacao {
+    font-size: 13px;
+}
+
+#recomendacao:not(:empty) {
+    margin-top: 20px;
+    border-top: 1px solid var(--borda);
+    padding-top: 15px;
+}
+
+
+/* ==========================================================================
+   7. JANELA MODAL (DIALOG) DE DETALHES DO CURSO
+   ================================================================---------- */
 dialog {
     width: min(960px, 94vw);
     max-height: 90vh;
+    border: 1px solid var(--borda);
+    border-radius: 16px;
     padding: 0;
     background: var(--painel);
     color: var(--texto);
@@ -983,18 +604,25 @@ dialog {
     overscroll-behavior: contain;
 }
 
+dialog::backdrop {
+    background: #122d2377;
+}
+
 body:has(dialog[open]) {
     overflow: hidden;
 }
 
 .dialogo-topo {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
     padding: 18px 24px;
     position: sticky;
     top: 0;
     background: var(--painel);
     z-index: 2;
     border-bottom: 1px solid var(--borda);
-    align-items: center;
 }
 
 .dialogo-topo .sobretitulo {
@@ -1002,11 +630,41 @@ body:has(dialog[open]) {
 }
 
 .fechar {
+    background: #edf1e5;
+    border: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+    color: var(--verde);
     flex-shrink: 0;
 }
 
 .detalhe-imagem {
+    width: 100%;
     height: 250px;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--imagem)
+}
+
+.detalhe-imagem .imagem-curso {
+    display: block;
+    height: auto;
+    min-height: 0;
+    border-radius: 0;
+}
+
+.detalhe-imagem .imagem-curso img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
 }
 
 .detalhe-corpo {
@@ -1064,7 +722,10 @@ body:has(dialog[open]) {
     overflow-wrap: anywhere;
 }
 
-/* Páginas de login e cadastro compartilham os estilos do portal. */
+
+/* ==========================================================================
+   8. PÁGINAS DE AUTENTICAÇÃO (LOGIN E CADASTRO)
+   ================================================================---------- */
 .pagina-conta {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1148,7 +809,116 @@ body:has(dialog[open]) {
     color: #ac2334;
 }
 
-/* O cabeçalho permanece escuro nos dois temas. */
+
+/* ==========================================================================
+   9. RODAPÉ INSTITUCIONAL
+   ================================================================---------- */
+footer.rodape-novo {
+    background: #132f27;
+    color: #f0f5ec;
+    border-top: 0;
+}
+
+.rodape-novo .rodape-novo__grade {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr auto;
+    align-items: start;
+    gap: 35px;
+    padding-block: 45px;
+}
+
+.rodape-novo .rodape-novo__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    white-space: nowrap;
+    color: #f0f5ec;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -.8px;
+    line-height: 1.15;
+}
+
+.rodape-novo .rodape-novo__marca {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: #123b30;
+    color: #e5efcf;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: lowercase;
+}
+
+.rodape-novo .rodape-novo__nome > span {
+    color: #b8d6aa;
+}
+
+.rodape-novo .rodape-novo__identidade p {
+    margin: 12px 0 0;
+    max-width: 240px;
+    color: #c0d0c5;
+    font-size: 12px;
+}
+
+.rodape-novo .rodape-novo__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.rodape-novo .rodape-novo__links h2 {
+    margin: 0 0 5px;
+    color: #f0f5ec;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.4;
+}
+
+.rodape-novo .rodape-novo__links a,
+.rodape-novo .rodape-novo__links button,
+.rodape-novo .rodape-novo__final {
+    color: #d0ded4;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.rodape-novo .rodape-novo__tema {
+    display: inline;
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    text-align: left;
+    font-weight: 400;
+    white-space: normal;
+}
+
+.rodape-novo a:hover,
+.rodape-novo .rodape-novo__tema:hover {
+    text-decoration: underline;
+}
+
+.rodape-novo .rodape-novo__final {
+    text-align: right;
+}
+
+.rodape-novo .rodape-novo__final p {
+    margin: 0 0 8px;
+}
+
+
+/* ==========================================================================
+   10. SUPORTE AO TEMA ESCURO (DARK MODE)
+   ================================================================---------- */
 :root[data-tema="escuro"] {
     --verde: #acd69c;
     --verde-claro: #273c2d;
@@ -1195,16 +965,6 @@ body:has(dialog[open]) {
     color: #b5d39e;
 }
 
-[data-tema="escuro"] .orbita {
-    background: #2b3b29;
-}
-
-[data-tema="escuro"] .cartao-trilha {
-    background: #22341f;
-    border-color: #506544;
-    box-shadow: 10px 18px 0 #394b31;
-}
-
 [data-tema="escuro"] .etiqueta {
     background: var(--painel);
 }
@@ -1213,7 +973,6 @@ body:has(dialog[open]) {
     background: var(--lilas);
 }
 
-[data-tema="escuro"] .icone-grande,
 [data-tema="escuro"] .check {
     background: #b5d39e;
     color: #14251b;
@@ -1234,12 +993,6 @@ body:has(dialog[open]) {
     background: var(--suave);
 }
 
-[data-tema="escuro"] .aviso {
-    background: #363326;
-    border-color: #bbb07b;
-    color: #e0d8b8;
-}
-
 [data-tema="escuro"] input,
 [data-tema="escuro"] select {
     border-color: #6b806e;
@@ -1249,10 +1002,14 @@ body:has(dialog[open]) {
     color: #ffa3ad;
 }
 
-[data-tema="escuro"] .pular {
+[data-tema="escuro"] pular {
     background: var(--painel);
 }
 
+
+/* ==========================================================================
+   11. MEDIA QUERIES (RESPONSIVIDADE PARA DISPOSITIVOS MÓVEIS E TABLETS)
+   ================================================================---------- */
 @media(max-width:1200px) {
     .cabecalho {
         flex-wrap: wrap;
@@ -1267,6 +1024,15 @@ body:has(dialog[open]) {
 
     .controles-cabecalho {
         margin-left: auto;
+    }
+
+    .rodape-novo .rodape-novo__grade {
+        grid-template-columns: 1.5fr 1fr 1fr;
+    }
+
+    .rodape-novo .rodape-novo__final {
+        grid-column: 1 / -1;
+        text-align: left;
     }
 }
 
@@ -1290,9 +1056,15 @@ body:has(dialog[open]) {
     .painel-conta {
         padding: 25px;
     }
+}
 
-    .rodape {
-        flex-wrap: wrap;
+@media(max-width:700px) {
+    .rodape-novo .rodape-novo__grade {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .rodape-novo .rodape-novo__identidade {
+        grid-column: 1 / -1;
     }
 }
 
@@ -1314,13 +1086,21 @@ body:has(dialog[open]) {
     }
 
     .cabecalho .menu-botao {
+        display: block;
         background: transparent;
         color: #f5f8ef;
         border-color: #789487;
     }
 
-    .cabecalho-conta .controles-cabecalho {
-        justify-content: flex-start;
+    .cabecalho nav {
+        display: none;
+        flex-direction: column;
+        gap: 14px;
+        padding: 10px;
+    }
+
+    .cabecalho nav.aberto {
+        display: flex;
     }
 
     .filtros {
@@ -1382,221 +1162,33 @@ body:has(dialog[open]) {
     .painel-conta {
         padding: 22px;
     }
+}
 
-    .rodape nav {
-        gap: 12px 18px;
+@media(max-width:480px) {
+    .rodape-novo .rodape-novo__grade {
+        grid-template-columns: 1fr;
+        gap: 27px;
     }
 
-    .cabecalho nav {
-        display: none;
+    .rodape-novo .rodape-novo__identidade,
+    .rodape-novo .rodape-novo__final {
+        grid-column: auto;
     }
-
-    .cabecalho nav.aberto {
-        display: flex;
-    }
-    
-}
-/* NOVO RODAPÉ */
-
-footer.rodape-novo {
-  background: #132f27;
-  color: #f0f5ec;
-  border-top: 0;
 }
 
-.rodape-novo .rodape-novo__grade {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr auto;
-  align-items: start;
-  gap: 35px;
-  padding-block: 45px;
-}
-
-/* Logo */
-
-.rodape-novo .rodape-novo__logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 11px;
-  white-space: nowrap;
-  color: #f0f5ec;
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: -.8px;
-  line-height: 1.15;
-}
-
-.rodape-novo .rodape-novo__marca {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  flex-shrink: 0;
-  border-radius: 11px;
-  background: #123b30;
-  color: #e5efcf;
-  font-size: 22px;
-  font-weight: 800;
-  text-transform: lowercase;
-}
-
-.rodape-novo .rodape-novo__nome > span {
-  color: #b8d6aa;
-}
-
-.rodape-novo .rodape-novo__identidade p {
-  margin: 12px 0 0;
-  max-width: 240px;
-  color: #c0d0c5;
-  font-size: 12px;
-}
-
-/* Atalhos */
-
-.rodape-novo .rodape-novo__links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-.rodape-novo .rodape-novo__links h2 {
-  margin: 0 0 5px;
-  color: #f0f5ec;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 1.4;
-}
-
-.rodape-novo .rodape-novo__links a,
-.rodape-novo .rodape-novo__links button,
-.rodape-novo .rodape-novo__final {
-  color: #d0ded4;
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-/* Botão de tema */
-
-.rodape-novo .rodape-novo__tema {
-  display: inline;
-  width: auto;
-  height: auto;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  text-align: left;
-  font-weight: 400;
-  white-space: normal;
-}
-
-.rodape-novo a:hover,
-.rodape-novo .rodape-novo__tema:hover {
-  text-decoration: underline;
-}
-
-/* Informações finais */
-
-.rodape-novo .rodape-novo__final {
-  text-align: right;
-}
-
-.rodape-novo .rodape-novo__final p {
-  margin: 0 0 8px;
-}
-
-/* Responsividade */
-
-@media (max-width: 1050px) {
-  .rodape-novo .rodape-novo__grade {
-    grid-template-columns: 1.5fr 1fr 1fr;
-  }
-
-  .rodape-novo .rodape-novo__final {
-    grid-column: 1 / -1;
-    text-align: left;
-  }
-}
-
-@media (max-width: 700px) {
-  .rodape-novo .rodape-novo__grade {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .rodape-novo .rodape-novo__identidade {
-    grid-column: 1 / -1;
-  }
-}
-
-@media (max-width: 480px) {
-  .rodape-novo .rodape-novo__grade {
-    grid-template-columns: 1fr;
-    gap: 27px;
-  }
-
-  .rodape-novo .rodape-novo__identidade,
-  .rodape-novo .rodape-novo__final {
-    grid-column: auto;
-  }
-}
+/* Tratamentos visuais específicos para imagens e fontes */
 img[src*="aperfeiçoamentoemsaúdemental"] {
     object-fit: contain;
     background-color: white;
 }
 
-#detalhe-imagem {
-  width: 100%;
-  height: auto;
-  margin: 0;
-}
-
-#detalhe-imagem .imagem-curso {
-  display: block;
-  height: auto;
-  min-height: 0;
-  border-radius: 0;
-}
-
-#detalhe-imagem .imagem-curso img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: none;
-}
-
-/* Mostrar mais e menos cursos */
-
-#lista-cursos.reduzido {
-    position: relative;
-}
-
-/* Esconde os cards a partir do quarto */
-#lista-cursos.reduzido > .curso:nth-child(n + 4) {
-    display: none;
-}
-
-/* Botão mostrar mais / menos */
-.mostrar-cursos {
-    display: block;
-    margin: 25px auto 0;
-    padding: 12px 25px;
-    border: 1px solid var(--borda);
-    border-radius: 25px;
-    background: var(--painel);
-    color: var(--verde);
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s ease;
-}
-
-.mostrar-cursos:hover {
-    transform: translateY(-2px);
-}
-/* Imagens dos cursos FGV */
 .imagem-curso img[src$="fgv.png"] {
     object-fit: contain;
     background-color: white;
+}
+
+@media(prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }

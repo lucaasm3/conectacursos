@@ -1,6 +1,8 @@
-// Cursos transcritos do documento fornecido pelo grupo.
-// Para inserir uma imagem: coloque o arquivo em images/ e preencha imagem: "images/arquivo.jpg".
-// A mesma imagem é exibida no cartão e nos detalhes do curso.
+/* ==========================================================================
+   1. BASE DE DADOS E CARREGAMENTO DE FAVORITOS (LocalStorage)
+   ========================================================================== */
+
+// Catálogo completo de cursos importados do documento do grupo (contendo ID, nome, área, plataforma, carga horária, descrição e especificações)
 const cursos = [
   {
     "id": 1,
@@ -2388,13 +2390,27 @@ const cursos = [
   }
 ];
 
+// Chave utilizada para salvar os IDs dos cursos favoritados no armazenamento do navegador
 const chaveFavoritos = "conectacursos-favoritos-v2";
+
+// Inicializa a lista de favoritos tentando recuperar os dados salvos anteriormente no LocalStorage
 let favoritos = [];
 try {
+  // Converte a string JSON salva no navegador de volta para um array de JavaScript
   const salvos = JSON.parse(localStorage.getItem(chaveFavoritos) || "[]");
+  // Filtra apenas os IDs válidos que realmente pertencem ao catálogo atual de cursos
   if (Array.isArray(salvos)) favoritos = salvos.filter(id => cursos.some(curso => curso.id === id));
-} catch { /* O catálogo continua funcionando se o navegador bloquear o armazenamento. */ }
+} catch { 
+  // O catálogo continua funcionando normalmente caso o navegador bloqueie o armazenamento local 
+}
+
+// Define a categoria inicial selecionada como "Todas" para exibir todos os cursos ao carregar a página
 let areaAtiva = "Todas";
+
+
+/* ==========================================================================
+   2. CAPTURA DE ELEMENTOS DO DOM (INTERAÇÃO COM A PÁGINA)
+   ================================================================---------- */
 const pesquisa = document.querySelector("#pesquisa");
 const duracao = document.querySelector("#duracao");
 const plataforma = document.querySelector("#plataforma");
@@ -2402,9 +2418,16 @@ const soFavoritos = document.querySelector("#so-favoritos");
 const lista = document.querySelector("#lista-cursos");
 const botaoMostrarCursos = document.querySelector("#mostrar-cursos");
 const dialogo = document.querySelector("#detalhes");
+
+// Função utilitária para normalizar textos (remove acentos e transforma em letras minúsculas para facilitar buscas sem erro)
 const normalizar = texto => texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR");
 
-// Cria elementos sem interpretar os textos do catálogo como HTML.
+
+/* ==========================================================================
+   3. CRIAÇÃO SEGURA DE ELEMENTOS E EXIBIÇÃO DE IMAGENS
+   ================================================================---------- */
+
+// Função auxiliar para criar elementos HTML de forma programática sem interpretar textos como código HTML puro (evita falhas de segurança)
 function elemento(tag, classe, texto) {
   const item = document.createElement(tag);
   if (classe) item.className = classe;
@@ -2412,60 +2435,95 @@ function elemento(tag, classe, texto) {
   return item;
 }
 
-// Um campo de imagem atende aos dois locais. Sem arquivo, mostramos o espaço reservado.
+// Função que gerencia a exibição da imagem do curso ou define um espaço reservado (fallback) caso o arquivo não exista
 function imagemCurso(curso) {
-  const caixa = elemento("div", "imagem-curso");
-  const caminhoImagem = curso.plataforma === "FGV"
-  ? "images/fgv.png"
-  : curso.imagem;
+  const caixa = document.createElement("div");
+  caixa.className = "imagem-curso";
+  
+  // Se o curso for da FGV, define uma imagem padrão específica; caso contrário, usa a imagem cadastrada
+  const caminhoImagem = curso.plataforma === "FGV" ? "images/fgv.png" : curso.imagem;
+  
+  // Função executada caso a imagem falhe ao carregar
   const reservado = () => {
-    caixa.replaceChildren(elemento("span", "imagem-simbolo", "▧"), elemento("span", "", "Insira imagem"));
+    caixa.replaceChildren(
+      document.createElement("span"), // Ícone substituto
+      document.createElement("span")  // Texto "Insira imagem"
+    );
     caixa.setAttribute("role", "img");
     caixa.setAttribute("aria-label", `Espaço para imagem do curso ${curso.nome}`);
   };
+
   if (caminhoImagem) {
     const imagem = document.createElement("img");
     imagem.src = caminhoImagem;
     imagem.alt = `Imagem do curso ${curso.nome}`;
-    imagem.loading = "lazy";
+    imagem.loading = "lazy"; // Otimiza o carregamento da página carregando imagens sob demanda
     imagem.addEventListener("error", reservado, { once: true });
     caixa.append(imagem);
-  } else reservado();
+  } else {
+    reservado();
+  }
   return caixa;
 }
 
+
+/* ==========================================================================
+   4. JANELA MODAL DE DETALHES DO CURSO
+   ================================================================---------- */
+
+// Preenche e abre a janela nativa (<dialog>) com as informações completas do curso clicado
 function abrirDetalhes(curso) {
   document.querySelector("#detalhe-titulo").textContent = curso.nome;
   document.querySelector("#detalhe-descricao").textContent = curso.descricao;
   document.querySelector("#detalhe-info").textContent = `${curso.area} · ${curso.plataforma} · ${curso.carga}`;
   document.querySelector("#detalhe-imagem").replaceChildren(imagemCurso(curso));
+  
   const especificacoes = document.querySelector("#detalhe-especificacoes");
-  especificacoes.replaceChildren();
+  especificacoes.replaceChildren(); // Limpa especificações anteriores
+  
+  // Percorre a lista de especificações do curso e adiciona cada item na tabela de detalhes
   curso.especificacoes.forEach(([nome, valor]) => {
-    const linha = elemento("div");
-    linha.append(elemento("dt", "", nome), elemento("dd", "", valor));
+    const linha = document.createElement("div");
+    const dt = document.createElement("dt");
+    dt.textContent = nome;
+    const dd = document.createElement("dd");
+    dd.textContent = valor;
+    linha.append(dt, dd);
     especificacoes.append(linha);
   });
+  
   document.querySelector("#detalhe-link").href = curso.link;
-  dialogo.showModal();
+  dialogo.showModal(); // Comando nativo do HTML para abrir a janela modal de forma centralizada
 }
 
+
+/* ==========================================================================
+   5. GERENCIAMENTO DE FAVORITOS
+   ================================================================---------- */
+
+// Adiciona ou remove um curso da lista de favoritos do usuário e atualiza o armazenamento local
 function alternarFavorito(curso, botao) {
+  // Verifica se o ID já está no array; se estiver, remove; se não estiver, adiciona
   favoritos = favoritos.includes(curso.id) ? favoritos.filter(id => id !== curso.id) : [...favoritos, curso.id];
+  
   let mensagem = "Favoritos atualizados e salvos neste navegador.";
-  try { localStorage.setItem(chaveFavoritos, JSON.stringify(favoritos)); }
-  catch { mensagem = "Favoritos atualizados nesta sessão. O navegador não permitiu salvar para a próxima visita."; }
+  try { 
+    localStorage.setItem(chaveFavoritos, JSON.stringify(favoritos)); 
+  } catch { 
+    mensagem = "Favoritos atualizados nesta sessão. O navegador não permitiu salvar para a próxima visita."; 
+  }
+  
   document.querySelector("#status-salvo").textContent = mensagem;
+  
   if (soFavoritos.checked) {
     exibirCursos();
-    const proximo = lista.querySelector("button");
-    (proximo || soFavoritos).focus();
   } else {
     atualizarBotaoFavorito(botao, curso);
     document.querySelector("#total-favoritos").textContent = favoritos.length;
   }
 }
 
+// Atualiza o ícone (coração vazio ou preenchido) e os atributos de acessibilidade do botão de favorito no card
 function atualizarBotaoFavorito(botao, curso) {
   const salvo = favoritos.includes(curso.id);
   botao.textContent = salvo ? "♥" : "♡";
@@ -2473,8 +2531,16 @@ function atualizarBotaoFavorito(botao, curso) {
   botao.setAttribute("aria-label", `${salvo ? "Remover dos" : "Adicionar aos"} favoritos: ${curso.nome}`);
 }
 
+
+/* ==========================================================================
+   6. FILTRAGEM E RENDERIZAÇÃO DINÂMICA DO CATÁLOGO
+   ================================================================---------- */
+
+// Filtra os cursos com base nos critérios digitados na busca, duração, plataforma, categoria e filtro de favoritos
 function exibirCursos() {
   const termo = normalizar(pesquisa.value.trim());
+  
+  // Aplica os filtros combinados usando o método .filter() do JavaScript
   const encontrados = cursos.filter(curso =>
     normalizar(curso.nome).includes(termo) &&
     (areaAtiva === "Todas" || curso.area === areaAtiva) &&
@@ -2482,52 +2548,91 @@ function exibirCursos() {
     (!Number(duracao.value) || curso.horas <= Number(duracao.value)) &&
     (!soFavoritos.checked || favoritos.includes(curso.id))
   );
-  lista.replaceChildren();
+
+  lista.replaceChildren(); // Limpa a grade antes de renderizar os novos resultados
+  
   document.querySelector("#resultado").textContent = `${encontrados.length} ${encontrados.length === 1 ? "curso encontrado" : "cursos encontrados"}`;
   document.querySelector("#total-favoritos").textContent = favoritos.length;
-  if (!encontrados.length) lista.append(elemento("p", "vazio", "Nenhum curso encontrado. Tente outro nome ou ajuste os filtros."));
+
+  // Exibe mensagem de aviso caso nenhum curso corresponda aos filtros
+  if (!encontrados.length) {
+    lista.append(elemento("p", "vazio", "Nenhum curso encontrado. Tente outro nome ou ajuste os filtros."));
+  }
+
+  // Cria dinamicamente o HTML (card) para cada curso encontrado
   encontrados.forEach(curso => {
-    const cartao = elemento("article", "curso");
-    const capa = elemento("div", "capa");
-    const salvar = elemento("button", "salvar");
+    const cartao = document.createElement("article");
+    cartao.className = "curso";
+
+    const capa = document.createElement("div");
+    capa.className = "capa";
+
+    const salvar = document.createElement("button");
+    salvar.className = "salvar";
     salvar.type = "button";
     atualizarBotaoFavorito(salvar, curso);
     salvar.addEventListener("click", () => alternarFavorito(curso, salvar));
+
     capa.append(imagemCurso(curso), salvar);
-    const corpo = elemento("div", "corpo-curso");
-    const detalhes = elemento("button", "detalhar", "Conhecer curso →");
+
+    const corpo = document.createElement("div");
+    corpo.className = "corpo-curso";
+
+    const detalhes = document.createElement("button");
+    detalhes.className = "detalhar";
     detalhes.type = "button";
+    detalhes.textContent = "Conhecer curso →";
     detalhes.setAttribute("aria-label", `Conhecer curso: ${curso.nome}`);
     detalhes.addEventListener("click", () => abrirDetalhes(curso));
-    corpo.append(elemento("span", "tipo", `${curso.area} · ${curso.plataforma}`), elemento("h3", "", curso.nome), elemento("p", "resumo-curso", curso.resumo), elemento("div", "metadados", `${curso.carga} · ${curso.nivel}`), detalhes);
+
+    // Monta a estrutura interna do card com as informações do curso
+    const tipo = document.createElement("span");
+    tipo.className = "tipo";
+    tipo.textContent = `${curso.area} · ${curso.plataforma}`;
+
+    const titulo = document.createElement("h3");
+    titulo.textContent = curso.nome;
+
+    const resumo = document.createElement("p");
+    resumo.className = "resumo-curso";
+    resumo.textContent = curso.resumo;
+
+    const metadados = document.createElement("div");
+    metadados.className = "metadados";
+    metadados.textContent = `${curso.carga} · ${curso.nivel}`;
+
+    corpo.append(tipo, titulo, resumo, metadados, detalhes);
     cartao.append(capa, corpo);
     lista.append(cartao);
   });
-  const temMaisCursos = encontrados.length > 3;
 
+  // Gerencia a paginação visual ("Mostrar mais / menos cursos")
+  const temMaisCursos = encontrados.length > 3;
   lista.classList.toggle("reduzido", temMaisCursos);
   botaoMostrarCursos.hidden = !temMaisCursos;
   botaoMostrarCursos.textContent = "Mostrar mais cursos ↓";
   botaoMostrarCursos.setAttribute("aria-expanded", "false");
 }
 
+// Evento para expandir ou recolher a listagem de cursos ao clicar no botão "Mostrar mais"
 botaoMostrarCursos.addEventListener("click", () => {
   const reduzido = lista.classList.toggle("reduzido");
-
-  botaoMostrarCursos.textContent = reduzido
-    ? "Mostrar mais cursos ↓"
-    : "Mostrar menos cursos ↑";
-
-  botaoMostrarCursos.setAttribute(
-    "aria-expanded",
-    String(!reduzido)
-  );
+  botaoMostrarCursos.textContent = reduzido ? "Mostrar mais cursos ↓" : "Mostrar menos cursos ↑";
+  botaoMostrarCursos.setAttribute("aria-expanded", String(!reduzido));
 });
 
+
+/* ==========================================================================
+   7. OUVINTES DE EVENTOS (LISTENERS) DA INTERFACE
+   ================================================================---------- */
+
+// Aciona a atualização do catálogo sempre que o usuário digita ou altera os filtros
 pesquisa.addEventListener("input", exibirCursos);
 duracao.addEventListener("change", exibirCursos);
 plataforma.addEventListener("change", exibirCursos);
 soFavoritos.addEventListener("change", exibirCursos);
+
+// Gerencia os cliques nos botões de filtro rápido por categoria (Área)
 document.querySelectorAll(".categoria").forEach(botao => {
   botao.addEventListener("click", () => {
     areaAtiva = botao.dataset.area;
@@ -2539,6 +2644,8 @@ document.querySelectorAll(".categoria").forEach(botao => {
     exibirCursos();
   });
 });
+
+// Atalho do topo para exibir apenas os favoritos
 document.querySelector("#atalho-favoritos").addEventListener("click", () => {
   soFavoritos.checked = true;
   pesquisa.value = "";
@@ -2546,8 +2653,11 @@ document.querySelector("#atalho-favoritos").addEventListener("click", () => {
   plataforma.value = "Todas";
   document.querySelector('[data-area="Todas"]').click();
 });
+
+// Fecha a janela modal de detalhes ao clicar no botão de fechar (×)
 document.querySelector("#fechar-detalhes").addEventListener("click", () => dialogo.close());
 
+// Controla a abertura e fechamento do menu responsivo em dispositivos móveis
 const menuBotao = document.querySelector("#menu-botao");
 const menu = document.querySelector("#menu");
 menuBotao.addEventListener("click", () => {
@@ -2559,113 +2669,73 @@ menu.querySelectorAll("a").forEach(link => link.addEventListener("click", () => 
   menuBotao.setAttribute("aria-expanded", "false");
 }));
 
+
+/* ==========================================================================
+   8. QUESTIONÁRIO DE RECOMENDAÇÃO PERSONALIZADA
+   ======================================================================== */
+
 document.querySelector("#questionario").addEventListener("submit", evento => {
-  evento.preventDefault();
+  evento.preventDefault(); // Evita que a página recarregue ao enviar o formulário
+  
   const interesse = document.querySelector("#interesse").value;
   const objetivo = document.querySelector("#objetivo").value;
   const tempo = Number(document.querySelector("#tempo").value);
   const destino = document.querySelector("#recomendacao");
-  // Palavras dos nomes dos cursos relacionadas a cada objetivo.
-const palavrasPorObjetivo = {
-  programacao: [
-    "programador web",
-    "desenvolvimento",
-    "html",
-    "python",
-    "scratch"
-  ],
 
-  bancos: [
-    "banco de dados",
-    "sql",
-    "ciencia de dados"
-  ],
+  // Dicionário mapeando os objetivos escolhidos aos termos correspondentes nos cursos
+  const palavrasPorObjetivo = {
+    programacao: ["programador web", "desenvolvimento", "html", "python", "scratch"],
+    bancos: ["banco de dados", "sql", "ciencia de dados"],
+    ensino: ["ensino", "educacao", "aprendizagem", "educadores", "gestao escolar", "material didatico", "cultura e identidade do surdo", "autismo"],
+    saude: ["saude", "epidemiologia", "cuidador", "socorros", "paciente", "desnutricao", "sus", "superdotacao"],
+    profissional: ["comunicacao empresarial", "scrum", "git e github", "gestao escolar"],
+    seguranca: ["ciberseguranca", "fundamentos de ti"],
+    financas: ["educacao financeira"]
+  };
 
-  ensino: [
-    "ensino",
-    "educacao",
-    "aprendizagem",
-    "educadores",
-    "gestao escolar",
-    "material didatico",
-    "cultura e identidade do surdo",
-    "autismo"
-  ],
+  const palavras = palavrasPorObjetivo[objetivo] || [];
 
-  saude: [
-    "saude",
-    "epidemiologia",
-    "cuidador",
-    "socorros",
-    "paciente",
-    "desnutricao",
-    "sus",
-    "superdotacao"
-  ],
+  // Filtra os cursos compatíveis com a área, o tempo máximo e o objetivo selecionado
+  const compativeis = cursos.filter(curso => {
+    const nome = normalizar(curso.nome);
+    const combinaComObjetivo = palavras.length === 0 || palavras.some(palavra => nome.includes(palavra));
+    return (curso.area === interesse && curso.horas <= tempo && combinaComObjetivo);
+  });
 
-  profissional: [
-    "comunicacao empresarial",
-    "scrum",
-    "git e github",
-    "gestao escolar"
-  ],
-
-  seguranca: [
-    "ciberseguranca",
-    "fundamentos de ti"
-  ],
-
-  financas: [
-    "educacao financeira"
-  ]
-};
-
-const palavras = palavrasPorObjetivo[objetivo] || [];
-
-const compativeis = cursos.filter(curso => {
-  const nome = normalizar(curso.nome);
-
-  const combinaComObjetivo =
-    palavras.length === 0 ||
-    palavras.some(palavra => nome.includes(palavra));
-
-  return (
-    curso.area === interesse &&
-    curso.horas <= tempo &&
-    combinaComObjetivo
-  );
-});
-  // Critério transparente: a área e o tempo filtram, o objetivo ordena por duração.
+  // Ordena os resultados com base na preferência e limita a sugestão a 3 cursos
   const sugestoes = [...compativeis].sort((a, b) => objetivo === "Começar" ? a.horas - b.horas : b.horas - a.horas).slice(0, 3);
+  
   destino.replaceChildren();
+
   if (!sugestoes.length) {
     destino.append(elemento("p", "", "Ainda não temos uma opção para essa combinação. Experimente mudar a área, objetivo ou ampliar o tempo disponível."));
     return;
   }
-  const objetivoSelecionado = document.querySelector(
-  "#objetivo option:checked"
-).textContent.trim();
 
-const motivo =
-  `Cursos de ${interesse}, com até ${tempo} horas, ` +
-  `para o objetivo: ${objetivoSelecionado}. ` +
-  `Confira os requisitos de cada curso antes da inscrição.`;
+  const objetivoSelecionado = document.querySelector("#objetivo option:checked").textContent.trim();
+  const motivo = `Cursos de ${interesse}, com até ${tempo} horas, para o objetivo: ${objetivoSelecionado}. Confira os requisitos de cada curso antes da inscrição.`;
+
   destino.append(elemento("strong", "", "Seu próximo passo pode estar aqui."), elemento("p", "", motivo));
-  const listaSugestoes = elemento("ul");
+  
+  const listaSugestoes = document.createElement("ul");
   sugestoes.forEach(curso => {
-    const item = elemento("li");
-    const botao = elemento("button", "", `${curso.nome} — ${curso.carga}`);
+    const item = document.createElement("li");
+    const botao = document.createElement("button");
     botao.type = "button";
+    botao.textContent = `${curso.nome} — ${curso.carga}`;
     botao.addEventListener("click", () => abrirDetalhes(curso));
     item.append(botao);
     listaSugestoes.append(item);
   });
   destino.append(listaSugestoes);
 });
-/* Atalho de favoritos do rodapé */
+
+
+/* ==========================================================================
+   9. ATALHOS DE FAVORITOS DO RODAPÉ E INICIALIZAÇÃO
+   ================================================================---------- */
 
 const favoritosNoRodape = document.getElementById('rodape-favoritos');
-
 if (favoritosNoRodape) {
   favoritosNoRodape.addEventListener('click', (evento) => {
     evento.preventDefault();
@@ -2673,8 +2743,10 @@ if (favoritosNoRodape) {
   });
 }
 
-// Permite acessar favoritos pelas páginas de login e cadastro.
+// Permite acessar favoritos diretamente caso a página seja aberta com a âncora #favoritos
 if (window.location.hash === '#favoritos') {
   document.getElementById('atalho-favoritos')?.click();
 }
+
+// Executa a renderização inicial dos cursos ao carregar o script
 exibirCursos();

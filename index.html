@@ -12,106 +12,135 @@
 </head>
 
 <body>
+  <!-- ==========================================
+       BLOCO DE ACESSIBILIDADE E CABEÇALHO SUPERIOR
+       ========================================== -->
   <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  
   <div class="faixa-cabecalho">
     <header class="cabecalho">
+      <!-- Logotipo do site com um span estilizado na letra "c." e redirecionamento para o topo -->
       <a class="logo" href="#inicio"><span class="marca" aria-hidden="true">c.</span>Conecta<span>Cursos</span></a>
+      
+      <!-- Botão responsivo para abrir o menu em dispositivos móveis (com atributos de acessibilidade ARIA) -->
       <button id="menu-botao" class="menu-botao" aria-expanded="false" aria-controls="menu">Menu ☰</button>
+      
+      <!-- Links de navegação interna do menu principal -->
       <nav id="menu" aria-label="Principal">
-        <a href="#cursos">Explorar cursos</a><a href="#descobrir">Descobrir meu curso</a><a href="#sobre">Sobre o
-          projeto</a>
+        <a href="#cursos">Explorar cursos</a>
+        <a href="#descobrir">Descobrir meu curso</a>
+        <a href="#sobre">Sobre o projeto</a>
       </nav>
-      <div class="controles-cabecalho"><a class="atalho" href="#cursos" id="atalho-favoritos">♡ Favoritos <span
-            id="total-favoritos">0</span></a><button class="tema-botao" type="button" aria-label="Ativar modo escuro"
-          aria-pressed="false">◐ Tema escuro</button><a class="conta-link" href="login.html">Entrar</a><button
-          class="sair-botao" type="button" hidden>Sair</button></div>
+
+      <!-- Controles do cabeçalho: atalho de favoritos, botão de tema escuro e links de conta/login -->
+      <div class="controles-cabecalho">
+        <a class="atalho" href="#cursos" id="atalho-favoritos">♡ Favoritos <span id="total-favoritos">0</span></a>
+        <button class="tema-botao" type="button" aria-label="Ativar modo escuro" aria-pressed="false">◐ Tema escuro</button>
+        <a class="conta-link" href="login.html">Entrar</a>
+        <button class="sair-botao" type="button" hidden>Sair</button>
+      </div>
     </header>
   </div>
+
+  <!-- ==========================================
+       CONTEÚDO PRINCIPAL (MAIN)
+       ========================================== -->
   <main id="conteudo">
+    
+    <!-- Seção Hero (Destaque inicial da página com chamada para ação) -->
     <section class="hero largura" id="inicio" aria-labelledby="titulo">
       <div>
         <p class="sobretitulo">UM NOVO PASSO NA SUA FORMAÇÃO</p>
         <h1 id="titulo">Seu futuro começa<br>com o próximo <em>aprendizado.</em></h1>
-        <p class="introducao">Explore novas áreas, desenvolva habilidades e encontre cursos que combinam com seus
-          objetivos.</p>
-        <div class="acoes"><a class="botao" href="#cursos">Explorar cursos <span aria-hidden="true">↗</span></a><a
-            class="link" href="#descobrir">Me ajude a escolher →</a></div>
-           </div>
+        <p class="introducao">Explore novas áreas, desenvolva habilidades e encontre cursos que combinam com seus objetivos.</p>
+        <div class="acoes">
+          <a class="botao" href="#cursos">Explorar cursos <span aria-hidden="true">↗</span></a>
+          <a class="link" href="#descobrir">Me ajude a escolher →</a>
+        </div>
+      </div>
 
-      <div
-        class="visual"
-        aria-label="Imagem de uma trilha de aprendizado"
-      >
-        <img
-          src="images/imageminicio.png"
-          alt="Sua próxima conquista: aprender abre novos caminhos."
-        >
+      <div class="visual" aria-label="Imagem de uma trilha de aprendizado">
+        <img src="images/imageminicio.png" alt="Sua próxima conquista: aprender abre novos caminhos.">
       </div>
     </section>
 
-    <section class="sobre largura iniciativa" id="sobre">
-      <div>
-    </section>
+    <!-- Seção Institucional "Sobre o projeto" (Explica a proposta acadêmica e os certificados) -->
     <section class="sobre largura iniciativa" id="sobre">
       <div>
         <p class="sobretitulo">SOBRE O PROJETO</p>
         <h2>Conectando você<br>a novas possibilidades.</h2>
       </div>
       <div>
-        <p>O ConectaCursos é uma proposta de catálogo para ajudar estudantes a descobrir oportunidades de aprendizagem e
-          planejar sua formação complementar.</p>
-        <p>Os cursos estão organizados por área, plataforma e carga horária. A inscrição acontece na página da
-          instituição responsável. O aproveitamento como horas complementares depende das regras da sua faculdade.</p>
+        <p>O ConectaCursos é uma proposta de catálogo para ajudar estudantes a descobrir oportunidades de aprendizagem e planejar sua formação complementar.</p>
+        <p>Os cursos estão organizados por área, plataforma e carga horária. A inscrição acontece na página da instituição responsável. O aproveitamento como horas complementares depende das regras da sua faculdade.</p>
         <p>Todos os cursos apresentados possuem certificado de conclusão reconhecido pelo MEC, o qual é fornecido pela própria instituição.</p>
         <p>Para ingressar em um curso, é necessário acessar o link disponibilizado e realizar a inscrição conforme as instruções da instituição.</p>
         <p class="nota">Projeto acadêmico · Programação Web I · Turma 2026</p>
       </div>
     </section>
+
+    <!-- Seção principal do Catálogo de Cursos e Filtros Dinâmicos -->
     <section class="catalogo" id="cursos" aria-labelledby="titulo-cursos">
       <div class="largura">
         <div class="titulo-linha">
           <div>
             <p class="sobretitulo">EXPLORE POSSIBILIDADES</p>
             <h2 id="titulo-cursos">O que você quer aprender?</h2>
-        <p class="nota-catalogo">Explore 46 cursos de IFRS, FGV, Fundação Bradesco e UNA-SUS. Consulte a disponibilidade
-          e as condições atuais na página de cada instituição.</p>
-        <div class="filtros">
-          <div class="busca"><label for="pesquisa">Pesquisar pelo nome</label><input type="search" id="pesquisa"
-              placeholder="Ex.: Scratch, saúde mental, HTML..."></div>
-          <div><label for="duracao">Tempo disponível</label><select id="duracao">
-              <option value="0">Todas as durações</option>
-              <option value="5">Até 5 horas</option>
-              <option value="20">Até 20 horas</option>
-              <option value="40">Até 40 horas</option>
-              <option value="60">Até 60 horas</option>
-              <option value="200">Até 200 horas</option>
-            </select></div>
-          <div><label for="plataforma">Plataforma</label><select id="plataforma">
-              <option value="Todas">Todas as plataformas</option>
-              <option>IFRS</option>
-              <option>FGV</option>
-              <option>Fundação Bradesco</option>
-              <option>UNA-SUS</option>
-            </select></div>
-          <label class="favoritos-filtro"><input type="checkbox" id="so-favoritos"> Somente favoritos</label>
+            <p class="nota-catalogo">Explore 46 cursos de IFRS, FGV, Fundação Bradesco e UNA-SUS. Consulte a disponibilidade e as condições atuais na página de cada instituição.</p>
+            
+            <!-- Bloco de controles e filtros interativos da listagem -->
+            <div class="filtros">
+              <div class="busca">
+                <label for="pesquisa">Pesquisar pelo nome</label>
+                <input type="search" id="pesquisa" placeholder="Ex.: Scratch, saúde mental, HTML...">
+              </div>
+              <div>
+                <label for="duracao">Tempo disponível</label>
+                <select id="duracao">
+                  <option value="0">Todas as durações</option>
+                  <option value="5">Até 5 horas</option>
+                  <option value="20">Até 20 horas</option>
+                  <option value="40">Até 40 horas</option>
+                  <option value="60">Até 60 horas</option>
+                  <option value="200">Até 200 horas</option>
+                </select>
+              </div>
+              <div>
+                <label for="plataforma">Plataforma</label>
+                <select id="plataforma">
+                  <option value="Todas">Todas as plataformas</option>
+                  <option>IFRS</option>
+                  <option>FGV</option>
+                  <option>Fundação Bradesco</option>
+                  <option>UNA-SUS</option>
+                </select>
+              </div>
+              <label class="favoritos-filtro"><input type="checkbox" id="so-favoritos"> Somente favoritos</label>
+            </div>
+
+            <!-- Botões de filtro rápido por grande área de conhecimento -->
+            <div class="categorias" role="group" aria-label="Filtrar por área">
+              <button class="categoria ativo" data-area="Todas" aria-pressed="true">Todas as áreas</button>
+              <button class="categoria" data-area="Tecnologia" aria-pressed="false">⌘ Tecnologia</button>
+              <button class="categoria" data-area="Saúde" aria-pressed="false">♡ Saúde</button>
+              <button class="categoria" data-area="Educação" aria-pressed="false">✎ Educação</button>
+            </div>
+
+            <p id="resultado" class="contador" role="status"></p>
+            
+            <!-- Container dinâmico onde o JavaScript injeta os cards de cursos -->
+            <div id="lista-cursos" class="grade"></div>
+
+            <button id="mostrar-cursos" class="mostrar-cursos" type="button" aria-controls="lista-cursos" aria-expanded="false" hidden>
+              Mostrar mais cursos ↓
+            </button>
+            <p id="status-salvo" class="contador" role="status"></p>
+          </div>
         </div>
-        <div class="categorias" role="group" aria-label="Filtrar por área">
-          <button class="categoria ativo" data-area="Todas" aria-pressed="true">Todas as áreas</button><button
-            class="categoria" data-area="Tecnologia" aria-pressed="false">⌘ Tecnologia</button><button class="categoria"
-            data-area="Saúde" aria-pressed="false">♡ Saúde</button><button class="categoria" data-area="Educação"
-            aria-pressed="false">✎ Educação</button>
-        </div>
-        <p id="resultado" class="contador" role="status"></p>
-        <div id="lista-cursos" class="grade"></div>
-        <button id="mostrar-cursos" class="mostrar-cursos"
-          type="button"
-          aria-controls="lista-cursos"
-          aria-expanded="false" hidden>
-         Mostrar mais cursos ↓
-        </button>
-        <p id="status-salvo" class="contador" role="status"></p>
       </div>
     </section>
+
+    <!-- Seção do Questionário de Recomendação Personalizada -->
     <section class="largura descoberta" id="descobrir" aria-labelledby="titulo-descobrir">
       <div class="descoberta-texto">
         <p class="sobretitulo">UMA ESCOLHA COM A SUA CARA</p>
@@ -119,56 +148,31 @@
         <p>Conte um pouco sobre o que você procura. Vamos sugerir cursos do catálogo que combinam com seu momento.</p>
         <span class="selo">✦ Simples, rápido e sem cadastro</span>
       </div>
+
       <form id="questionario">
-        <label for="interesse">Qual área desperta sua curiosidade?</label><select id="interesse" required>
+        <label for="interesse">Qual área desperta sua curiosidade?</label>
+        <select id="interesse" required>
           <option value="">Selecione uma área</option>
           <option>Tecnologia</option>
           <option>Saúde</option>
           <option>Educação</option>
         </select>
-        <label for="objetivo">Qual é seu objetivo?</label><select id="objetivo" required>
+
+        <label for="objetivo">Qual é seu objetivo?</label>
+        <select id="objetivo" required>
           <option value="">Selecione seu objetivo</option>
-
-          <option value="Começar">
-            Começar com cursos mais curtos
-          </option>
-
-          <option value="Currículo">
-            Priorizar uma formação mais longa
-          </option>
-
-          <option value="programacao">
-            Aprender programação e criar sites
-          </option>
-
-          <option value="bancos">
-            Aprender sobre bancos de dados
-          </option>
-
-          <option value="ensino">
-            Melhorar minhas práticas de ensino
-          </option>
-
-          <option value="saude">
-            Aprofundar conhecimentos em saúde
-          </option>
-
-          <option value="profissional">
-            Desenvolver habilidades profissionais
-          </option>
-
-          <option value="seguranca">
-            Aprender sobre segurança digital
-          </option>
-
-          <option value="financas">
-            Organizar minhas finanças
-          </option>
+          <option value="Começar">Começar com cursos mais curtos</option>
+          <option value="Currículo">Priorizar uma formação mais longa</option>
+          <option value="programacao">Aprender programação e criar sites</option>
+          <option value="bancos">Aprender sobre bancos de dados</option>
+          <option value="ensino">Melhorar minhas práticas de ensino</option>
+          <option value="saude">Aprofundar conhecimentos em saúde</option>
+          <option value="profissional">Desenvolver habilidades profissionais</option>
+          <option value="seguranca">Aprender sobre segurança digital</option>
+          <option value="financas">Organizar minhas finanças</option>
         </select>
-        <label for="tempo">
-          Quanto tempo você tem disponível?
-        </label>
 
+        <label for="tempo">Quanto tempo você tem disponível?</label>
         <select id="tempo">
           <option value="5">Até 5 horas</option>
           <option value="20" selected>Até 20 horas</option>
@@ -176,14 +180,18 @@
           <option value="60">Até 60 horas</option>
           <option value="200">Até 200 horas</option>
         </select>
+
         <button class="botao" type="submit">Encontrar meu próximo curso ↗</button>
         <div id="recomendacao" role="status"></div>
       </form>
     </section>
   </main>
+
+  <!-- ==========================================
+       RODAPÉ E JANELA MODAL (DIALOG)
+       ========================================== -->
   <footer class="rodape-novo">
     <div class="largura rodape-novo__grade">
-
       <div class="rodape-novo__identidade">
         <a class="rodape-novo__logo" href="#inicio" aria-label="ConectaCursos: página inicial">
           <span class="rodape-novo__marca" aria-hidden="true">c.</span>
@@ -205,22 +213,21 @@
         <a href="login.html">Entrar</a>
         <a href="cadastro.html">Criar conta</a>
         <a href="#cursos" id="rodape-favoritos">Meus favoritos</a>
-        <button type="button" class="tema-botao rodape-novo__tema">
-          Alternar modo claro/escuro
-        </button>
+        <button type="button" class="tema-botao rodape-novo__tema">Alternar modo claro/escuro</button>
       </nav>
 
       <div class="rodape-novo__final">
         <p>Protótipo acadêmico · 2026</p>
         <a href="#inicio">Voltar ao topo ↑</a>
       </div>
-
     </div>
   </footer>
+
+  <!-- Janela modal (<dialog>) nativa para exibir os detalhes completos de um curso selecionado -->
   <dialog id="detalhes" aria-labelledby="detalhe-titulo">
     <div class="dialogo-topo">
-      <p class="sobretitulo">CONHEÇA O CURSO</p><button id="fechar-detalhes" class="fechar" type="button"
-        aria-label="Fechar detalhes">×</button>
+      <p class="sobretitulo">CONHEÇA O CURSO</p>
+      <button id="fechar-detalhes" class="fechar" type="button" aria-label="Fechar detalhes">×</button>
     </div>
     <div id="detalhe-imagem" class="detalhe-imagem"></div>
     <div class="detalhe-corpo">
@@ -229,12 +236,10 @@
       <h3>Sobre o curso</h3>
       <p id="detalhe-descricao"></p>
       <h3>Informações e especificações</h3>
-      <dl id="detalhe-especificacoes" class="especificacoes"></dl><a id="detalhe-link" class="botao" target="_blank"
-        rel="noopener noreferrer">Acessar curso na instituição ↗</a>
-      <p class="nota">O link abre em uma nova aba. Confira a oferta, os prazos e a certificação na plataforma
-        responsável. A aceitação de horas complementares depende da sua faculdade.</p>
+      <dl id="detalhe-especificacoes" class="especificacoes"></dl>
+      <a id="detalhe-link" class="botao" target="_blank" rel="noopener noreferrer">Acessar curso na instituição ↗</a>
+      <p class="nota">O link abre em uma nova aba. Confira a oferta, os prazos e a certificação na plataforma responsável. A aceitação de horas complementares depende da sua faculdade.</p>
     </div>
   </dialog>
 </body>
-
 </html>

@@ -6,86 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro — ConectaCursos</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Importa o script conta.js de forma adiada (defer) para gerenciar o envio e validação do cadastro -->
     <script src="conta.js" defer></script>
 </head>
 
 <body>
+    <!-- Link de acessibilidade para leitores de tela pularem direto ao conteúdo -->
     <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    
+    <!-- Cabeçalho simplificado específico da página de cadastro/conta -->
     <div class="faixa-cabecalho">
-        <header class="cabecalho cabecalho-conta"><a class="logo" href="index.html"><span class="marca"
-                    aria-hidden="true">c.</span>Conecta<span>Cursos</span></a>
-            <div class="controles-cabecalho"><a class="atalho" href="index.html#cursos">Explorar cursos</a><button
-                    class="tema-botao" type="button" aria-label="Ativar modo escuro" aria-pressed="false">◐ Tema
-                    escuro</button></div>
+        <header class="cabecalho cabecalho-conta">
+            <!-- Logotipo que redireciona de volta à página inicial (index.html) -->
+            <a class="logo" href="index.html"><span class="marca" aria-hidden="true">c.</span>Conecta<span>Cursos</span></a>
+            <!-- Atalhos e botão de alternância de tema no topo -->
+            <div class="controles-cabecalho">
+                <a class="atalho" href="index.html#cursos">Explorar cursos</a>
+                <button class="tema-botao" type="button" aria-label="Ativar modo escuro" aria-pressed="false">◐ Tema escuro</button>
+            </div>
         </header>
     </div>
+
+    <!-- Conteúdo principal dividido em duas seções: apresentação visual e painel do formulário de registro -->
     <main class="largura pagina-conta" id="conteudo">
+        
+        <!-- Seção de boas-vindas e contextualização visual para novos usuários -->
         <section class="apresentacao-conta">
             <p class="sobretitulo">SEU PRÓXIMO PASSO COMEÇA AQUI</p>
             <h1>Crie seu espaço de aprendizado.</h1>
-            <p>Descubra novos interesses, encontre cursos e continue construindo sua formação.</p><a class="link"
-                href="index.html">← Voltar ao catálogo</a>
+            <p>Descubra novos interesses, encontre cursos e continue construindo sua formação.</p>
+            <a class="link" href="index.html">← Voltar ao catálogo</a>
         </section>
+
+        <!-- Seção contendo o formulário interativo de cadastro demonstrativo -->
         <section class="painel-conta" aria-labelledby="titulo-formulario">
             <p class="sobretitulo">CONECTACURSOS</p>
             <h2 id="titulo-formulario">Cadastre-se</h2>
-            <form id="form-conta" data-tipo="cadastro" aria-describedby="aviso-demo"><label for="nome">Nome
-                    completo</label><input id="nome" name="nome" autocomplete="name" minlength="2" maxlength="100"
-                    required placeholder="Como você quer ser chamado?"><label for="email">E-mail</label><input
-                    id="email" name="email" type="email" autocomplete="email" maxlength="150" required
-                    placeholder="voce@exemplo.com"><label for="senha">Senha de demonstração</label>
-                <div class="campo-senha"><input id="senha" name="senha" type="password" autocomplete="new-password"
-                        minlength="6" required aria-describedby="ajuda-senha"><button type="button" id="mostrar-senha"
-                        aria-pressed="false" aria-label="Mostrar senha de demonstração">Mostrar</button></div>
-                <p class="ajuda" id="ajuda-senha">Use pelo menos 6 caracteres fictícios.</p><label
-                    for="confirmar">Confirme a senha de demonstração</label><input id="confirmar" name="confirmar"
-                    type="password" autocomplete="new-password" minlength="6" required>
-                <p id="erro-confirmacao" class="erro" aria-live="polite"></p><button class="botao" type="submit">Simular
-                    cadastro ↗</button>
+            
+            <!-- Formulário de cadastro configurado com atributo de tipo para o JavaScript identificar -->
+            <form id="form-conta" data-tipo="cadastro" aria-describedby="aviso-demo">
+                
+                <!-- Campo para preenchimento do nome completo -->
+                <label for="nome">Nome completo</label>
+                <input id="nome" name="nome" autocomplete="name" minlength="2" maxlength="100" required placeholder="Como você quer ser chamado?">
+                
+                <!-- Campo de e-mail -->
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" maxlength="150" required placeholder="voce@exemplo.com">
+                
+                <!-- Campo de senha com recurso para alternar visibilidade -->
+                <label for="senha">Senha de demonstração</label>
+                <div class="campo-senha">
+                    <input id="senha" name="senha" type="password" autocomplete="new-password" minlength="6" required aria-describedby="ajuda-senha">
+                    <button type="button" id="mostrar-senha" aria-pressed="false" aria-label="Mostrar senha de demonstração">Mostrar</button>
+                </div>
+                <p class="ajuda" id="ajuda-senha">Use pelo menos 6 caracteres fictícios.</p>
+                
+                <!-- Campo para redigir a senha novamente e validar a correspondência -->
+                <label for="confirmar">Confirme a senha de demonstração</label>
+                <input id="confirmar" name="confirmar" type="password" autocomplete="new-password" minlength="6" required>
+                
+                <!-- Elemento reservado para exibir mensagem de erro caso as senhas não coincidam -->
+                <p id="erro-confirmacao" class="erro" aria-live="polite"></p>
+                
+                <!-- Botão de submissão do formulário -->
+                <button class="botao" type="submit">Simular cadastro ↗</button>
                 <p id="status-conta" role="status"></p>
             </form>
+
+            <!-- Link alternativo para caso o usuário já possua uma conta -->
             <p class="trocar-conta"><a href="login.html">Já tenho cadastro. Entrar →</a></p>
         </section>
     </main>
 
-<footer class="rodape-novo">
-  <div class="largura rodape-novo__grade">
+  <!-- Rodapé institucional simplificado -->
+  <footer class="rodape-novo">
+    <div class="largura rodape-novo__grade">
 
-    <div class="rodape-novo__identidade">
-      <a class="rodape-novo__logo" href="index.html#inicio">
-        <span class="rodape-novo__marca">c.</span>
-        <span class="rodape-novo__nome">
-          Conecta<span>Cursos</span>
-        </span>
-      </a>
-      <p>Aprendizado que conecta possibilidades.</p>
+      <div class="rodape-novo__identidade">
+        <a class="rodape-novo__logo" href="index.html#inicio">
+          <span class="rodape-novo__marca">c.</span>
+          <span class="rodape-novo__nome">
+            Conecta<span>Cursos</span>
+          </span>
+        </a>
+        <p>Aprendizado que conecta possibilidades.</p>
+      </div>
+
+      <nav class="rodape-novo__links" aria-label="Atalhos">
+        <h2>Atalhos</h2>
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#sobre">Sobre o projeto</a>
+        <a href="index.html#cursos">Explorar cursos</a>
+        <a href="index.html#descobrir">Descobrir meu curso</a>
+      </nav>
+
+      <nav class="rodape-novo__links" aria-label="Conta e preferências">
+        <h2>Conta e preferências</h2>
+        <a href="login.html">Entrar</a>
+        <a href="cadastro.html">Criar conta</a>
+        <a href="index.html#favoritos">Meus favoritos</a>
+        <button type="button" class="tema-botao rodape-novo__tema">
+          Alternar modo claro/escuro
+        </button>
+      </nav>
+
+      <div class="rodape-novo__final">
+        <p>Protótipo acadêmico · 2026</p>
+        <a href="#">Voltar ao topo ↑</a>
+      </div>
+
     </div>
-
-    <nav class="rodape-novo__links" aria-label="Atalhos">
-      <h2>Atalhos</h2>
-      <a href="index.html#inicio">Início</a>
-      <a href="index.html#sobre">Sobre o projeto</a>
-      <a href="index.html#cursos">Explorar cursos</a>
-      <a href="index.html#descobrir">Descobrir meu curso</a>
-    </nav>
-
-    <nav class="rodape-novo__links" aria-label="Conta e preferências">
-      <h2>Conta e preferências</h2>
-      <a href="login.html">Entrar</a>
-      <a href="cadastro.html">Criar conta</a>
-      <a href="index.html#favoritos">Meus favoritos</a>
-      <button type="button" class="tema-botao rodape-novo__tema">
-        Alternar modo claro/escuro
-      </button>
-    </nav>
-
-    <div class="rodape-novo__final">
-      <p>Protótipo acadêmico · 2026</p>
-      <a href="#">Voltar ao topo ↑</a>
-    </div>
-
-  </div>
-</footer>
+  </footer>
 
 </body>
 
