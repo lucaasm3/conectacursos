@@ -2446,8 +2446,8 @@ function imagemCurso(curso) {
   // Função executada caso a imagem falhe ao carregar
   const reservado = () => {
     caixa.replaceChildren(
-      document.createElement("span"), // Ícone substituto
-      document.createElement("span")  // Texto "Insira imagem"
+      elemento("span", "imagem-simbolo", "▧"), // Ícone substituto
+      elemento("span", "", "Imagem indisponível")  // Texto "Insira imagem"
     );
     caixa.setAttribute("role", "img");
     caixa.setAttribute("aria-label", `Espaço para imagem do curso ${curso.nome}`);
@@ -2458,6 +2458,7 @@ function imagemCurso(curso) {
     imagem.src = caminhoImagem;
     imagem.alt = `Imagem do curso ${curso.nome}`;
     imagem.loading = "lazy"; // Otimiza o carregamento da página carregando imagens sob demanda
+    imagem.decoding = "async";
     imagem.addEventListener("error", reservado, { once: true });
     caixa.append(imagem);
   } else {
@@ -2747,6 +2748,5 @@ if (favoritosNoRodape) {
 if (window.location.hash === '#favoritos') {
   document.getElementById('atalho-favoritos')?.click();
 }
-
 // Executa a renderização inicial dos cursos ao carregar o script
 exibirCursos();

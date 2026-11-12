@@ -12,7 +12,7 @@
 
 <body>
     <!-- Link de acessibilidade para leitores de tela pularem direto ao conteúdo -->
-    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <a class="pular" href="#conteudo"></a>
     
     <!-- Cabeçalho simplificado específico da página de login/conta -->
     <div class="faixa-cabecalho">
@@ -53,10 +53,10 @@
                 <!-- Campo de senha com recurso interativo para alternar visibilidade -->
                 <label for="senha">Senha de demonstração</label>
                 <div class="campo-senha">
-                    <input id="senha" name="senha" type="password" autocomplete="current-password" minlength="6" required aria-describedby="ajuda-senha">
+                    <input id="senha" name="senha" type="password" autocomplete="current-password" minlength="8" required aria-describedby="ajuda-senha">
                     <button type="button" id="mostrar-senha" aria-pressed="false" aria-label="Mostrar senha de demonstração">Mostrar</button>
                 </div>
-                <p class="ajuda" id="ajuda-senha">Use pelo menos 6 caracteres fictícios.</p>
+                <p class="ajuda" id="ajuda-senha">Use pelo menos 8 caracteres fictícios.</p>
                 
                 <!-- Botão de submissão do formulário -->
                 <button class="botao" type="submit">Simular entrada ↗</button>
