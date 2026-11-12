@@ -161,45 +161,6 @@ Apague a pesquisa, amplie os filtros e confira se a opção de mostrar somente f
 **Um link não abriu ou a oferta mudou. O que fazer?**  
 Consulte a plataforma responsável. O catálogo precisa ser revisado quando as instituições alteram seus endereços ou ofertas.
 
-## Limitações e próximas melhorias
-
-O protótipo possui login demonstrativo e armazenamento local de favoritos. As informações dos cursos precisam de revisão periódica.
-
-Como possibilidades de evolução, o grupo pode implementar autenticação real com segurança adequada, sincronização de favoritos entre dispositivos e uma forma de atualizar as ofertas com mais facilidade.
-
-## Ferramentas utilizadas na validação
-
-A documentação inicial do protótipo registra testes locais no Chromium e verificações de sintaxe JavaScript, referências de arquivos, identificadores e rótulos. Esses registros se referem ao protótipo e não comprovam a validação das alterações posteriores feitas pelo grupo.
-
-| Ferramenta ou procedimento | Finalidade | Situação |
-| --- | --- | --- |
-| Chromium | Conferir pesquisa, filtros, detalhes, favoritos, sugestões, tema, formulários e adaptação do layout. | Testes locais registrados na documentação inicial do protótipo; repetir na versão final. |
-| Verificação de sintaxe JavaScript | Identificar erros de sintaxe em `script.js` e `conta.js`. | Registrada no protótipo; o registro não informa a ferramenta utilizada. |
-| Revisão estrutural | Conferir caminhos de arquivos, identificadores e associações entre campos e rótulos. | Registrada no protótipo; conferir novamente após as alterações. |
-| W3C Nu HTML Checker | Validar as páginas HTML. | **A confirmar pelo grupo:** registrar se foi utilizado, a data e o resultado. |
-| W3C CSS Validation Service | Validar o arquivo CSS. | **A confirmar pelo grupo:** registrar se foi utilizado, a data e o resultado. |
-| Lighthouse | Avaliar desempenho, acessibilidade e boas práticas. | **A confirmar pelo grupo:** incluir os relatórios e resultados reais. |
-
-Antes da entrega, atualizar a tabela com as ferramentas efetivamente utilizadas na versão final. As ferramentas marcadas como “a confirmar” não devem ser apresentadas como testes concluídos sem os respectivos resultados.
-
-## Melhorias de desempenho realizadas
-
-A revisão inicial do protótipo identificou as seguintes medidas no código. É necessário conferir se elas permanecem nos arquivos da versão final.
-
-| Medida | Aplicação registrada no protótipo | Benefício esperado |
-| --- | --- | --- |
-| Scripts com `defer` | Inclusão dos scripts externos nas páginas correspondentes. | Permitir que a análise do HTML continue durante o download dos scripts. |
-| Carregamento sob demanda de imagens | Uso de `loading="lazy"` nas imagens dos cursos. | Adiar o carregamento de imagens que ainda não precisam ser exibidas. |
-| Reutilização de recursos | Compartilhamento de `style.css` e `conta.js` entre as páginas. | Reduzir duplicação e permitir o reaproveitamento dos arquivos pelo cache do navegador. |
-| Fontes do sistema | Uso de fontes disponíveis localmente, sem arquivos de fontes externos. | Evitar requisições adicionais para baixar fontes. |
-| Pesquisa e filtros locais | Processamento dos resultados sobre o catálogo já carregado. | Atualizar a lista sem buscar novamente os dados na rede. |
-
-Não há, na documentação disponível, uma comparação quantitativa de desempenho antes e depois dessas medidas. Para registrar ganhos medidos, incluir as métricas reais, as condições do teste e os relatórios utilizados. Não foram acrescentadas alegações de compressão, conversão de imagens ou minificação sem confirmação de que foram realizadas.
-
-## Endereço do site publicado
-
-**PREENCHER: inserir o endereço público do site após a publicação.**
-
 ## Identificação dos integrantes
 
 ### Iago Melo Pinheiro
@@ -209,8 +170,6 @@ Não há, na documentação disponível, uma comparação quantitativa de desemp
 
 Desenvolvedor responsável pela estrutura HTML do projeto, incluindo a organização das páginas, elementos, formulários, navegação e componentes da interface.
 
-**Testes realizados:** T17, T05, T06, T07, T12, T15, T18, T19.
-
 ### Lucas Monteiro
 
 - **Matrícula:** 20260011792
@@ -218,16 +177,12 @@ Desenvolvedor responsável pela estrutura HTML do projeto, incluindo a organiza�
 
 Desenvolvedor responsável pela estilização em CSS, incluindo identidade visual, organização dos elementos, responsividade, temas claro e escuro e apresentação dos componentes.
 
-**Testes realizados:** T01, T02, T03, T04, T08, T11, T17.
-
 ### Mariana Coelho Patrocinio
 
 - **Matrícula:** 20260005347
 - **Área de atuação:** JavaScript
 
 Desenvolvedora responsável pela programação em JavaScript, incluindo pesquisa, filtros, gerenciamento de favoritos, recomendações, validações dos formulários, armazenamento de preferências e funcionalidades interativas do catálogo.
-
-**Testes realizados:** T09, T10, T13, T14, T16, T20, T21.
 
 **Instituição:** Universidade do Estado do Pará — UEPA.  
 **Curso:** Bacharelado em Engenharia de Software.  
