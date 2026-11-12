@@ -23,7 +23,10 @@
     document.documentElement.dataset.tema = tema;
     document.querySelectorAll('.tema-botao').forEach(botao => {
       botao.textContent = tema === 'escuro' ? '☀ Tema claro' : '◐ Tema escuro';
-      botao.setAttribute('aria-label', tema === 'escuro' ? 'Ativar modo claro' : 'Ativar modo escuro');
+      botao.setAttribute(
+          'aria-label',
+          `${botao.textContent.trim()} — ativar modo ${tema === 'escuro' ? 'claro' : 'escuro'}`
+      );
       botao.setAttribute('aria-pressed', String(tema === 'escuro'));
     });
   }
